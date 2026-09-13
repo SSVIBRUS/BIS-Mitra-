@@ -1,6 +1,54 @@
 {
   "conversations": [
     {
+      "id": 50,
+      "question": "What are Quality Control Orders (QCOs)?",
+      "answer": "💡 **उत्तर:**\nManufacturing, importing, stocking, or selling products covered under mandatory Quality Control Orders (QCO) without a valid BIS license or ISI mark is a serious criminal offense under Section 29 of the BIS Act, 2016. Penalties include: 1) Imprisonment up to 2 years. 2) Fine of minimum ₹2 Lakhs up to 10 times the value of non-compliant goods seized. 3) Seizure and destruction of non-compliant stock from market outlets.",
+      "category": "All",
+      "sources": [
+        {
+          "title": "BIS Official Process Guide - What happens if a company sells a product under mandatory QCO without an ISI mark?",
+          "url": "https://www.bis.gov.in/enforcement-and-surveillance/",
+          "excerpt": "Manufacturing, importing, stocking, or selling products covered under mandatory Quality Control Orders (QCO) without a valid BIS license or ISI mark is a seriou..."
+        },
+        {
+          "title": "IS 14543:2016 - Packaged Drinking Water (Other than Packaged Natural Mineral Water) Specification",
+          "url": "https://www.bis.gov.in/index.php/standards/technical-departments/food-and-agriculture-department/",
+          "excerpt": "Covers physical, chemical, microbiological, radiological, and toxicological parameters for packaged drinking water filled in sealed containers...."
+        },
+        {
+          "title": "BIS Compulsory Certification List: Helmet for Two-Wheelers (IS 4151:2015)",
+          "url": "https://www.bis.gov.in/product-certification/products-under-compulsory-certification/",
+          "excerpt": "Mandatory Quality Control Order in effect since June 1, 2021. Selling non-ISI helmets is punishable by law."
+        }
+      ],
+      "timestamp": "2026-09-13T20:08:17.347Z"
+    },
+    {
+      "id": 49,
+      "question": "what is bis",
+      "answer": "💡 **उत्तर:**\nManufacturing, importing, stocking, or selling products covered under mandatory Quality Control Orders (QCO) without a valid BIS license or ISI mark is a serious criminal offense under Section 29 of the BIS Act, 2016. Penalties include: 1) Imprisonment up to 2 years. 2) Fine of minimum ₹2 Lakhs up to 10 times the value of non-compliant goods seized. 3) Seizure and destruction of non-compliant stock from market outlets.",
+      "category": "All",
+      "sources": [
+        {
+          "title": "BIS Official Process Guide - What happens if a company sells a product under mandatory QCO without an ISI mark?",
+          "url": "https://www.bis.gov.in/enforcement-and-surveillance/",
+          "excerpt": "Manufacturing, importing, stocking, or selling products covered under mandatory Quality Control Orders (QCO) without a valid BIS license or ISI mark is a seriou..."
+        },
+        {
+          "title": "BIS Official Process Guide - What is the difference between ISI Mark (Scheme-I) and CRS (Scheme-II)?",
+          "url": "https://www.bis.gov.in/product-certification/product-certification-schemes/",
+          "excerpt": "The ISI Mark (Scheme-I) applies to physical products like helmets, packaged water, steel, pressure cookers, and cement. It requires a mandatory physical factory..."
+        },
+        {
+          "title": "IS 4151:2015 - Protective Helmets for Two-Wheeler Motorcyclists Specification",
+          "url": "https://www.bis.gov.in/product-certification/products-under-compulsory-certification/",
+          "excerpt": "Specifies materials, performance, impact absorption, chin strap strength, and peripheral vision requirements for helmets used by two-wheeler riders in India...."
+        }
+      ],
+      "timestamp": "2026-09-13T20:07:19.996Z"
+    },
+    {
       "id": 48,
       "question": "How do i get an my product certified",
       "answer": "💡 **उत्तर:**\nForeign manufacturers must apply under the Foreign Manufacturers Certification Scheme (FMCS): 1) Appoint an Authorized Indian Representative (AIR) residing in India to act as liaison. 2) Submit application on Manakonline with plant layout, factory location, and test setup. 3) BIS officers travel abroad to physically audit the foreign factory. 4) Product samples collected during audit are sent to India for testing in BIS labs. 5) License granted upon satisfactory audit and test results (~6 months process).",

@@ -11,9 +11,16 @@ self.addEventListener("activate", e => {
 self.addEventListener("fetch", e => {
   if (e.request.method !== "GET") return;
   const url = new URL(e.request.url);
-  if (url.pathname === "/" || url.pathname === "/index.html") {
-    e.respondWith(fetch(e.request));
-    return;
-  }
-  e.respondWith(caches.match(e.request).then(r => r || fetch(e.request)));
+  // Network first for HTML and JS assets so live updates display instantly
+  e.respondWith(
+    fetch(e.request)
+      .then(response => {
+        if (response && response.status === 200 && response.type === 'basic') {
+          const responseClone = response.clone();
+          caches.open(CACHE_NAME).then(cache => cache.put(e.request, responseClone));
+        }
+        return response;
+      })
+      .catch(() => caches.match(e.request))
+  );
 });
