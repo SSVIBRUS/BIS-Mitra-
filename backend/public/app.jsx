@@ -1633,8 +1633,8 @@ function ChatBox({ messages, loading, t = {}, darkMode, lang, onClear }) {
   };
 
   return (
-    <div className={`rounded-2xl shadow-xl border p-4 sm:p-6 mb-6 flex flex-col h-[520px] relative overflow-hidden ${
-      darkMode ? 'bg-slate-900 border-slate-800' : 'bg-white border-slate-300'
+    <div className={`rounded-2xl shadow-md border p-4 sm:p-6 mb-6 flex flex-col h-[520px] relative overflow-hidden transition-colors ${
+      darkMode ? 'bg-slate-900 border-slate-800' : 'bg-[#f8fafc] border-slate-200'
     }`}>
       {messages && messages.length > 0 && (
         <div className="flex justify-end mb-2 shrink-0">
@@ -1644,7 +1644,7 @@ function ChatBox({ messages, loading, t = {}, darkMode, lang, onClear }) {
             className={`text-xs font-semibold px-3 py-1.5 rounded-lg border transition flex items-center gap-1.5 cursor-pointer ${
               darkMode
                 ? 'bg-slate-800 hover:bg-red-900/60 text-slate-300 hover:text-red-300 border-slate-700 hover:border-red-700'
-                : 'bg-slate-100 hover:bg-red-50 text-slate-600 hover:text-red-600 border-slate-300 hover:border-red-300'
+                : 'bg-slate-100 hover:bg-red-50 text-slate-600 hover:text-red-600 border-slate-200 hover:border-red-300 shadow-xs'
             }`}
             title="Clear all chat messages"
           >
@@ -1656,7 +1656,7 @@ function ChatBox({ messages, loading, t = {}, darkMode, lang, onClear }) {
       <div className="flex-1 overflow-y-auto pr-2 space-y-6 relative z-10">
         {(!messages || !Array.isArray(messages) || messages.length === 0) ? (
           <div className="h-full flex items-center justify-center">
-            <h2 className={`text-3xl sm:text-4xl font-extrabold tracking-tight ${darkMode ? 'text-slate-300' : 'text-slate-700'}`}>{t.welcomeTitle || 'Welcome To BIS Mitra'}</h2>
+            <h2 className={`text-3xl sm:text-4xl font-extrabold tracking-tight ${darkMode ? 'text-slate-300' : 'text-slate-600'}`}>{t.welcomeTitle || 'Welcome To BIS Mitra'}</h2>
           </div>
         ) : (
           messages.map((msg, idx) => (
@@ -1667,7 +1667,7 @@ function ChatBox({ messages, loading, t = {}, darkMode, lang, onClear }) {
               }`}
             >
               {msg.type === 'bot' && (
-                <div className="w-10 h-10 rounded-xl bg-slate-950 text-emerald-400 flex items-center justify-center shrink-0 font-bold shadow-md mt-1 text-xl border border-slate-800">
+                <div className="w-10 h-10 rounded-xl bg-slate-900 text-emerald-400 flex items-center justify-center shrink-0 font-bold shadow-sm mt-1 text-xl border border-slate-700">
                   🤖
                 </div>
               )}
@@ -1675,10 +1675,10 @@ function ChatBox({ messages, loading, t = {}, darkMode, lang, onClear }) {
               <div
                 className={`max-w-[85%] sm:max-w-[78%] rounded-2xl p-4 sm:p-5 shadow-sm border text-lg relative ${
                   msg.type === 'user'
-                    ? 'bg-orange-600 text-white border-orange-700 rounded-tr-none font-medium'
+                    ? 'bg-slate-800 text-slate-50 border-slate-700 rounded-tr-none font-medium'
                     : darkMode
                       ? 'bg-slate-800 text-slate-100 border-slate-700 rounded-tl-none'
-                      : 'bg-slate-50 text-slate-900 border-slate-200 rounded-tl-none'
+                      : 'bg-white text-slate-900 border-slate-200 rounded-tl-none shadow-xs'
                 }`}
               >
                 <div className="flex items-center justify-between gap-2 mb-2">

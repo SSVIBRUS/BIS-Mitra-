@@ -36,13 +36,13 @@ export default function ChatBox({ messages, loading, onClear }) {
   };
 
   return (
-    <div className="bg-white rounded-2xl shadow-xl border border-slate-300 p-4 sm:p-6 mb-6 flex flex-col h-[520px] relative overflow-hidden">
+    <div className="bg-[#f8fafc] rounded-2xl shadow-md border border-slate-200 p-4 sm:p-6 mb-6 flex flex-col h-[520px] relative overflow-hidden">
       {messages.length > 0 && (
         <div className="flex justify-end mb-2 shrink-0">
           <button
             type="button"
             onClick={() => { if (onClear) onClear(); }}
-            className="text-xs font-semibold px-3 py-1.5 rounded-lg border transition flex items-center gap-1.5 cursor-pointer bg-slate-100 hover:bg-red-50 text-slate-600 hover:text-red-600 border-slate-300 hover:border-red-300"
+            className="text-xs font-semibold px-3 py-1.5 rounded-lg border transition flex items-center gap-1.5 cursor-pointer bg-slate-100 hover:bg-red-50 text-slate-600 hover:text-red-600 border-slate-200 hover:border-red-300 shadow-xs"
             title="Clear all chat messages"
           >
             <span>🗑️</span>
@@ -53,7 +53,7 @@ export default function ChatBox({ messages, loading, onClear }) {
       <div className="flex-1 overflow-y-auto pr-2 space-y-6 relative z-10">
         {messages.length === 0 ? (
           <div className="h-full flex items-center justify-center">
-            <h2 className="text-3xl sm:text-4xl font-extrabold tracking-tight text-slate-700">Welcome To BIS Mitra</h2>
+            <h2 className="text-3xl sm:text-4xl font-extrabold tracking-tight text-slate-600">Welcome To BIS Mitra</h2>
           </div>
         ) : (
           messages.map((msg, idx) => (
@@ -65,7 +65,7 @@ export default function ChatBox({ messages, loading, onClear }) {
             >
               {/* Bot Avatar */}
               {msg.type === 'bot' && (
-                <div className="w-10 h-10 rounded-xl bg-slate-900 text-emerald-400 flex items-center justify-center shrink-0 font-bold shadow-md mt-1">
+                <div className="w-10 h-10 rounded-xl bg-slate-800 text-emerald-400 flex items-center justify-center shrink-0 font-bold shadow-sm mt-1 border border-slate-700">
                   <Bot className="w-6 h-6" />
                 </div>
               )}
@@ -74,11 +74,11 @@ export default function ChatBox({ messages, loading, onClear }) {
               <div
                 className={`max-w-[85%] sm:max-w-[78%] rounded-2xl p-4 sm:p-5 shadow-sm border text-lg ${
                   msg.type === 'user'
-                    ? 'bg-orange-600 text-white border-orange-700 rounded-tr-none font-medium'
-                    : 'bg-slate-50 text-slate-900 border-slate-200 rounded-tl-none'
+                    ? 'bg-slate-800 text-slate-50 border-slate-700 rounded-tr-none font-medium'
+                    : 'bg-white text-slate-900 border-slate-200 rounded-tl-none shadow-xs'
                 }`}
               >
-                <div className="font-bold text-xs uppercase tracking-wider mb-2 opacity-80">
+                <div className="font-bold text-xs uppercase tracking-wider mb-2 opacity-70">
                   {msg.type === 'user' ? 'You Asked:' : 'BIS Official Assistant:'}
                 </div>
 
