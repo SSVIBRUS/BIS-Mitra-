@@ -1,0 +1,16 @@
+{
+  "name": "bis-ai-backend",
+  "version": "1.0.0",
+  "description": "Backend API and RAG engine for BIS AI-Powered Intelligent Assistant",
+  "main": "server.js",
+  "scripts": {
+    "build:ui": "node build_app.mjs && node -e \"require('fs').cpSync('public/dist', 'public', { recursive: true })\"",
+    "start": "npm run build:ui && node server.js",
+    "serve": "node server.js",
+    "dev": "node --watch server.js"
+  },
+  "dependencies": {
+    "express": "^4.19.2",
+    "cors": "^2.8.5"
+  }
+}

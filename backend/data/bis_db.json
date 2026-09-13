@@ -1,0 +1,1063 @@
+{
+  "conversations": [
+    {
+      "id": 48,
+      "question": "How do i get an my product certified",
+      "answer": "💡 **उत्तर:**\nForeign manufacturers must apply under the Foreign Manufacturers Certification Scheme (FMCS): 1) Appoint an Authorized Indian Representative (AIR) residing in India to act as liaison. 2) Submit application on Manakonline with plant layout, factory location, and test setup. 3) BIS officers travel abroad to physically audit the foreign factory. 4) Product samples collected during audit are sent to India for testing in BIS labs. 5) License granted upon satisfactory audit and test results (~6 months process).",
+      "category": "All",
+      "sources": [
+        {
+          "title": "BIS Official Process Guide - How can foreign manufacturers export certified goods to India (FMCS)?",
+          "url": "https://www.bis.gov.in/fmcs/",
+          "excerpt": "Foreign manufacturers must apply under the Foreign Manufacturers Certification Scheme (FMCS): 1) Appoint an Authorized Indian Representative (AIR) residing in I..."
+        },
+        {
+          "title": "BIS Official Process Guide - How can an MSME or Startup get discount on BIS certification fees?",
+          "url": "https://www.manakonline.in/MANAK/ApplicationLicenceRelatedrpt",
+          "excerpt": "Under the Micro, Small and Medium Enterprises (MSME) incentive policy of BIS: 1) Micro enterprises get a 80% concession on marking fees. 2) Small enterprises ge..."
+        },
+        {
+          "title": "IS 13252 (Part 1):2010 - Information Technology Equipment - Safety - General Requirements",
+          "url": "https://www.crsbis.in/BIS/",
+          "excerpt": "Ensures electrical, thermal, energy, and mechanical safety for IT products to prevent electric shocks, battery fires, and user injuries...."
+        }
+      ],
+      "timestamp": "2026-09-11T18:49:35.081Z"
+    },
+    {
+      "id": 47,
+      "question": "hello what is bear",
+      "answer": "💡 **उत्तर:**\nThe ISI Mark (Scheme-I) applies to physical products like helmets, packaged water, steel, pressure cookers, and cement. It requires a mandatory physical factory inspection by BIS officers and in-house testing facilities before a license is granted. CRS (Compulsory Registration Scheme / Scheme-II) primarily covers electronic and IT products (LED bulbs, laptops, chargers, solar inverters). Under CRS, no factory inspection is required prior to registration; manufacturers test products at a BIS-recognized NABL lab and register online to receive a unique R-Number.",
+      "category": "All",
+      "sources": [
+        {
+          "title": "BIS Official Process Guide - What is the difference between ISI Mark (Scheme-I) and CRS (Scheme-II)?",
+          "url": "https://www.bis.gov.in/product-certification/product-certification-schemes/",
+          "excerpt": "The ISI Mark (Scheme-I) applies to physical products like helmets, packaged water, steel, pressure cookers, and cement. It requires a mandatory physical factory..."
+        },
+        {
+          "title": "BIS Official Process Guide - What happens if a company sells a product under mandatory QCO without an ISI mark?",
+          "url": "https://www.bis.gov.in/enforcement-and-surveillance/",
+          "excerpt": "Manufacturing, importing, stocking, or selling products covered under mandatory Quality Control Orders (QCO) without a valid BIS license or ISI mark is a seriou..."
+        },
+        {
+          "title": "IS 4151:2015 - Protective Helmets for Two-Wheeler Motorcyclists Specification",
+          "url": "https://www.bis.gov.in/product-certification/products-under-compulsory-certification/",
+          "excerpt": "Specifies materials, performance, impact absorption, chin strap strength, and peripheral vision requirements for helmets used by two-wheeler riders in India...."
+        }
+      ],
+      "timestamp": "2026-09-11T18:48:51.995Z"
+    },
+    {
+      "id": 46,
+      "question": "hello what is device",
+      "answer": "💡 **उत्तर:**\nThe ISI Mark (Scheme-I) applies to physical products like helmets, packaged water, steel, pressure cookers, and cement. It requires a mandatory physical factory inspection by BIS officers and in-house testing facilities before a license is granted. CRS (Compulsory Registration Scheme / Scheme-II) primarily covers electronic and IT products (LED bulbs, laptops, chargers, solar inverters). Under CRS, no factory inspection is required prior to registration; manufacturers test products at a BIS-recognized NABL lab and register online to receive a unique R-Number.",
+      "category": "Food & Beverages",
+      "sources": [
+        {
+          "title": "BIS Official Process Guide - What is the difference between ISI Mark (Scheme-I) and CRS (Scheme-II)?",
+          "url": "https://www.bis.gov.in/product-certification/product-certification-schemes/",
+          "excerpt": "The ISI Mark (Scheme-I) applies to physical products like helmets, packaged water, steel, pressure cookers, and cement. It requires a mandatory physical factory..."
+        },
+        {
+          "title": "BIS Official Process Guide - What happens if a company sells a product under mandatory QCO without an ISI mark?",
+          "url": "https://www.bis.gov.in/enforcement-and-surveillance/",
+          "excerpt": "Manufacturing, importing, stocking, or selling products covered under mandatory Quality Control Orders (QCO) without a valid BIS license or ISI mark is a seriou..."
+        },
+        {
+          "title": "IS 14543:2016 - Packaged Drinking Water (Other than Packaged Natural Mineral Water) Specification",
+          "url": "https://www.bis.gov.in/index.php/standards/technical-departments/food-and-agriculture-department/",
+          "excerpt": "Covers physical, chemical, microbiological, radiological, and toxicological parameters for packaged drinking water filled in sealed containers...."
+        }
+      ],
+      "timestamp": "2026-09-11T18:46:07.520Z"
+    },
+    {
+      "id": 45,
+      "question": "bis",
+      "answer": "💡 **उत्तर:**\nManufacturing, importing, stocking, or selling products covered under mandatory Quality Control Orders (QCO) without a valid BIS license or ISI mark is a serious criminal offense under Section 29 of the BIS Act, 2016. Penalties include: 1) Imprisonment up to 2 years. 2) Fine of minimum ₹2 Lakhs up to 10 times the value of non-compliant goods seized. 3) Seizure and destruction of non-compliant stock from market outlets.",
+      "category": "All",
+      "sources": [
+        {
+          "title": "BIS Official Process Guide - What happens if a company sells a product under mandatory QCO without an ISI mark?",
+          "url": "https://www.bis.gov.in/enforcement-and-surveillance/",
+          "excerpt": "Manufacturing, importing, stocking, or selling products covered under mandatory Quality Control Orders (QCO) without a valid BIS license or ISI mark is a seriou..."
+        },
+        {
+          "title": "BIS Official Process Guide - How to verify if a gold jewellery hallmark HUID is genuine?",
+          "url": "https://www.bis.gov.in/hallmarking-overview/",
+          "excerpt": "Consumers can instantly verify gold hallmark purity using the official BIS Care mobile app or online portal: 1) Locate the 6-digit alphanumeric HUID (e.g. AB123..."
+        },
+        {
+          "title": "BIS Compulsory Certification List: Packaged Drinking Water (IS 14543:2016)",
+          "url": "https://www.bis.gov.in/product-certification/products-under-compulsory-certification/",
+          "excerpt": "Mandatory certification under FSSAI & BIS regulations. Requires in-house microbiology & chemical laboratory."
+        }
+      ],
+      "timestamp": "2026-09-11T12:25:53.913Z"
+    },
+    {
+      "id": 44,
+      "question": "bvitfkj,",
+      "answer": "I couldn't find an exact match in the current BIS records for your specific question. However, BIS manages over 21,890+ Indian Standards across 17 departments. You can check your product status on the official website bis.gov.in or search for standard codes directly.",
+      "category": "All",
+      "sources": [
+        {
+          "title": "Bureau of Indian Standards Official Portal",
+          "url": "https://www.bis.gov.in",
+          "excerpt": "Search 21,890+ Indian Standards and official notifications."
+        }
+      ],
+      "timestamp": "2026-09-11T12:25:41.987Z"
+    },
+    {
+      "id": 43,
+      "question": "sd ca;es",
+      "answer": "📌 **IS 2347:2017: Domestic Pressure Cookers - Specification**\n\n• **Category:** Consumer Goods & Kitchenware\n• **Certification Scheme:** Scheme-I (ISI Mark)\n• **Mandatory Status:** 🚨 Mandatory (Quality Control Order in Effect)\n\n**Description:**\nSpecifies design, bursting pressure, thermal efficiency, safety valves, operating pressure, and material specifications (Aluminum / Stainless Steel) for domestic pressure cookers.\n\n**How to Get License (Step-by-Step):**\n1. Ensure in-house pressure testing rig and safety valve calibration tools\n2. File application on Manakonline under IS 2347:2017\n3. Factory inspection by BIS scientific officer\n4. Hydrostatic pressure testing of cooker bodies and rubber gaskets\n5. Grant of CML (Certificate of Manufacturing License)\n\n**Fees Structure:**\nApplication fee: ₹1,000 | Marking fee: ₹5 per unit | Inspection fee: Standard daily rate",
+      "category": "All",
+      "sources": [
+        {
+          "title": "IS 2347:2017 - Domestic Pressure Cookers - Specification",
+          "url": "https://www.bis.gov.in/product-certification/products-under-compulsory-certification/",
+          "excerpt": "Specifies design, bursting pressure, thermal efficiency, safety valves, operating pressure, and material specifications (Aluminum / Stainless Steel) for domesti..."
+        },
+        {
+          "title": "BIS Official Process Guide - How can an MSME or Startup get discount on BIS certification fees?",
+          "url": "https://www.manakonline.in/MANAK/ApplicationLicenceRelatedrpt",
+          "excerpt": "Under the Micro, Small and Medium Enterprises (MSME) incentive policy of BIS: 1) Micro enterprises get a 80% concession on marking fees. 2) Small enterprises ge..."
+        },
+        {
+          "title": "BIS Official Process Guide - How to verify if a gold jewellery hallmark HUID is genuine?",
+          "url": "https://www.bis.gov.in/hallmarking-overview/",
+          "excerpt": "Consumers can instantly verify gold hallmark purity using the official BIS Care mobile app or online portal: 1) Locate the 6-digit alphanumeric HUID (e.g. AB123..."
+        }
+      ],
+      "timestamp": "2026-09-11T12:20:54.430Z"
+    },
+    {
+      "id": 42,
+      "question": "How to verify gold hallmark 6-digit HUID code?",
+      "answer": "💡 **उत्तर:**\nConsumers can instantly verify gold hallmark purity using the official BIS Care mobile app or online portal: 1) Locate the 6-digit alphanumeric HUID (e.g. AB1234) laser-etched on your gold jewellery. 2) Open the BIS Care App and tap 'Verify HUID'. 3) Enter the 6-digit code. 4) The app will display the registered jeweller name, hallmarking center name, date of hallmarking, article type, and purity grade (e.g., 22K916 or 18K750). If details do not match, file a complaint on the app.",
+      "category": "Precious Metals",
+      "sources": [
+        {
+          "title": "BIS Official Process Guide - How to verify if a gold jewellery hallmark HUID is genuine?",
+          "url": "https://www.bis.gov.in/hallmarking-overview/",
+          "excerpt": "Consumers can instantly verify gold hallmark purity using the official BIS Care mobile app or online portal: 1) Locate the 6-digit alphanumeric HUID (e.g. AB123..."
+        },
+        {
+          "title": "IS 15820:2009 - General Requirements for Establishment and Operation of Assaying and Hallmarking Centres",
+          "url": "https://www.bis.gov.in/hallmarking-overview/",
+          "excerpt": "Governs registration of jewellers and authorization of Assaying & Hallmarking (A&HC) centres to apply 6-digit HUID (Hallmark Unique ID) on gold items (14K, 18K,..."
+        },
+        {
+          "title": "BIS Compulsory Certification List: Gold Jewellery (IS 15820:2009)",
+          "url": "https://www.bis.gov.in/hallmarking-overview/",
+          "excerpt": "Mandatory 6-digit Hallmark Unique ID (HUID) laser-etched hallmarking for gold sold by registered jewellers."
+        }
+      ],
+      "timestamp": "2026-09-10T20:28:39.100Z"
+    },
+    {
+      "id": 41,
+      "question": "what is BIS",
+      "answer": "💡 **उत्तर:**\nManufacturing, importing, stocking, or selling products covered under mandatory Quality Control Orders (QCO) without a valid BIS license or ISI mark is a serious criminal offense under Section 29 of the BIS Act, 2016. Penalties include: 1) Imprisonment up to 2 years. 2) Fine of minimum ₹2 Lakhs up to 10 times the value of non-compliant goods seized. 3) Seizure and destruction of non-compliant stock from market outlets.",
+      "category": "All",
+      "sources": [
+        {
+          "title": "BIS Official Process Guide - What happens if a company sells a product under mandatory QCO without an ISI mark?",
+          "url": "https://www.bis.gov.in/enforcement-and-surveillance/",
+          "excerpt": "Manufacturing, importing, stocking, or selling products covered under mandatory Quality Control Orders (QCO) without a valid BIS license or ISI mark is a seriou..."
+        },
+        {
+          "title": "BIS Official Process Guide - What is the difference between ISI Mark (Scheme-I) and CRS (Scheme-II)?",
+          "url": "https://www.bis.gov.in/product-certification/product-certification-schemes/",
+          "excerpt": "The ISI Mark (Scheme-I) applies to physical products like helmets, packaged water, steel, pressure cookers, and cement. It requires a mandatory physical factory..."
+        },
+        {
+          "title": "IS 4151:2015 - Protective Helmets for Two-Wheeler Motorcyclists Specification",
+          "url": "https://www.bis.gov.in/product-certification/products-under-compulsory-certification/",
+          "excerpt": "Specifies materials, performance, impact absorption, chin strap strength, and peripheral vision requirements for helmets used by two-wheeler riders in India...."
+        }
+      ],
+      "timestamp": "2026-09-10T20:17:52.605Z"
+    },
+    {
+      "id": 40,
+      "question": "skdfmgwrbgonalz",
+      "answer": "I couldn't find an exact match in the current BIS records for your specific question. However, BIS manages over 21,890+ Indian Standards across 17 departments. You can check your product status on the official website bis.gov.in or search for standard codes directly.",
+      "category": "All",
+      "sources": [
+        {
+          "title": "Bureau of Indian Standards Official Portal",
+          "url": "https://www.bis.gov.in",
+          "excerpt": "Search 21,890+ Indian Standards and official notifications."
+        }
+      ],
+      "timestamp": "2026-09-10T20:16:33.256Z"
+    },
+    {
+      "id": 39,
+      "question": "What is IS 1786?",
+      "answer": "📌 **IS 1786:2008: High Strength Deformed Steel Bars and Wires for Concrete Reinforcement (TMT Bars)**\n\n• **Category:** Steel & Construction\n• **Certification Scheme:** Scheme-I (ISI Mark)\n• **Mandatory Status:** 🚨 Mandatory (Quality Control Order in Effect)\n\n**Description:**\nSpecifies chemical composition, yield stress, tensile strength, elongation, and bend test requirements for Fe 415, Fe 500, Fe 550, and Fe 600 grade TMT steel bars used in building construction.\n\n**How to Get License (Step-by-Step):**\n1. Setup steel testing equipment (Universal Testing Machine, spectrometer)\n2. File application on Manakonline\n3. Factory audit by BIS scientific inspection team\n4. Mechanical & chemical testing of steel billets and rolled TMT bars\n5. Grant of CML license\n\n**Fees Structure:**\nApplication fee: ₹1,000 | Marking fee based on metric tonnage produced",
+      "category": "All",
+      "sources": [
+        {
+          "title": "IS 1786:2008 - High Strength Deformed Steel Bars and Wires for Concrete Reinforcement (TMT Bars)",
+          "url": "https://www.bis.gov.in/product-certification/products-under-compulsory-certification/",
+          "excerpt": "Specifies chemical composition, yield stress, tensile strength, elongation, and bend test requirements for Fe 415, Fe 500, Fe 550, and Fe 600 grade TMT steel ba..."
+        },
+        {
+          "title": "BIS Official Process Guide - What is the difference between ISI Mark (Scheme-I) and CRS (Scheme-II)?",
+          "url": "https://www.bis.gov.in/product-certification/product-certification-schemes/",
+          "excerpt": "The ISI Mark (Scheme-I) applies to physical products like helmets, packaged water, steel, pressure cookers, and cement. It requires a mandatory physical factory..."
+        },
+        {
+          "title": "BIS Official Process Guide - What happens if a company sells a product under mandatory QCO without an ISI mark?",
+          "url": "https://www.bis.gov.in/enforcement-and-surveillance/",
+          "excerpt": "Manufacturing, importing, stocking, or selling products covered under mandatory Quality Control Orders (QCO) without a valid BIS license or ISI mark is a seriou..."
+        }
+      ],
+      "timestamp": "2026-09-10T19:50:37.218Z"
+    },
+    {
+      "id": 38,
+      "question": "What are Quality Control Orders (QCOs)?",
+      "answer": "💡 **उत्तर:**\nManufacturing, importing, stocking, or selling products covered under mandatory Quality Control Orders (QCO) without a valid BIS license or ISI mark is a serious criminal offense under Section 29 of the BIS Act, 2016. Penalties include: 1) Imprisonment up to 2 years. 2) Fine of minimum ₹2 Lakhs up to 10 times the value of non-compliant goods seized. 3) Seizure and destruction of non-compliant stock from market outlets.",
+      "category": "All",
+      "sources": [
+        {
+          "title": "BIS Official Process Guide - What happens if a company sells a product under mandatory QCO without an ISI mark?",
+          "url": "https://www.bis.gov.in/enforcement-and-surveillance/",
+          "excerpt": "Manufacturing, importing, stocking, or selling products covered under mandatory Quality Control Orders (QCO) without a valid BIS license or ISI mark is a seriou..."
+        },
+        {
+          "title": "IS 14543:2016 - Packaged Drinking Water (Other than Packaged Natural Mineral Water) Specification",
+          "url": "https://www.bis.gov.in/index.php/standards/technical-departments/food-and-agriculture-department/",
+          "excerpt": "Covers physical, chemical, microbiological, radiological, and toxicological parameters for packaged drinking water filled in sealed containers...."
+        },
+        {
+          "title": "BIS Compulsory Certification List: Helmet for Two-Wheelers (IS 4151:2015)",
+          "url": "https://www.bis.gov.in/product-certification/products-under-compulsory-certification/",
+          "excerpt": "Mandatory Quality Control Order in effect since June 1, 2021. Selling non-ISI helmets is punishable by law."
+        }
+      ],
+      "timestamp": "2026-09-10T18:26:49.805Z"
+    },
+    {
+      "id": 37,
+      "question": "What is IS 4151?",
+      "answer": "📌 **IS 4151:2015: Protective Helmets for Two-Wheeler Motorcyclists Specification**\n\n• **Category:** Safety & Automotive\n• **Certification Scheme:** Scheme-I (ISI Mark)\n• **Mandatory Status:** 🚨 Mandatory (Quality Control Order in Effect)\n\n**Description:**\nSpecifies materials, performance, impact absorption, chin strap strength, and peripheral vision requirements for helmets used by two-wheeler riders in India.\n\n**How to Get License (Step-by-Step):**\n1. Register manufacturing unit on Manakonline portal (manakonline.in)\n2. Select IS 4151:2015 and pay initial application fee of ₹1,000\n3. Set up in-house testing facility for impact absorption & penetration resistance\n4. Submit factory layout, machinery details, and QC personnel certificates\n5. BIS official carries out physical factory inspection & draws samples\n6. Samples tested at BIS recognized laboratory\n7. Grant of license upon passing test reports (~30-45 days)\n\n**Fees Structure:**\nApplication fee: ₹1,000 | Inspection fee: ₹7,000/day | Marking fee: ₹15 to ₹25 per 1,000 units | License renewal: ₹1,000 annual",
+      "category": "Safety",
+      "sources": [
+        {
+          "title": "IS 4151:2015 - Protective Helmets for Two-Wheeler Motorcyclists Specification",
+          "url": "https://www.bis.gov.in/product-certification/products-under-compulsory-certification/",
+          "excerpt": "Specifies materials, performance, impact absorption, chin strap strength, and peripheral vision requirements for helmets used by two-wheeler riders in India...."
+        },
+        {
+          "title": "BIS Official Process Guide - What is the difference between ISI Mark (Scheme-I) and CRS (Scheme-II)?",
+          "url": "https://www.bis.gov.in/product-certification/product-certification-schemes/",
+          "excerpt": "The ISI Mark (Scheme-I) applies to physical products like helmets, packaged water, steel, pressure cookers, and cement. It requires a mandatory physical factory..."
+        },
+        {
+          "title": "BIS Official Process Guide - What happens if a company sells a product under mandatory QCO without an ISI mark?",
+          "url": "https://www.bis.gov.in/enforcement-and-surveillance/",
+          "excerpt": "Manufacturing, importing, stocking, or selling products covered under mandatory Quality Control Orders (QCO) without a valid BIS license or ISI mark is a seriou..."
+        }
+      ],
+      "timestamp": "2026-09-10T07:01:22.299Z"
+    },
+    {
+      "id": 36,
+      "question": "what is bis",
+      "answer": "💡 **उत्तर:**\nManufacturing, importing, stocking, or selling products covered under mandatory Quality Control Orders (QCO) without a valid BIS license or ISI mark is a serious criminal offense under Section 29 of the BIS Act, 2016. Penalties include: 1) Imprisonment up to 2 years. 2) Fine of minimum ₹2 Lakhs up to 10 times the value of non-compliant goods seized. 3) Seizure and destruction of non-compliant stock from market outlets.",
+      "category": "All",
+      "sources": [
+        {
+          "title": "BIS Official Process Guide - What happens if a company sells a product under mandatory QCO without an ISI mark?",
+          "url": "https://www.bis.gov.in/enforcement-and-surveillance/",
+          "excerpt": "Manufacturing, importing, stocking, or selling products covered under mandatory Quality Control Orders (QCO) without a valid BIS license or ISI mark is a seriou..."
+        },
+        {
+          "title": "BIS Official Process Guide - What is the difference between ISI Mark (Scheme-I) and CRS (Scheme-II)?",
+          "url": "https://www.bis.gov.in/product-certification/product-certification-schemes/",
+          "excerpt": "The ISI Mark (Scheme-I) applies to physical products like helmets, packaged water, steel, pressure cookers, and cement. It requires a mandatory physical factory..."
+        },
+        {
+          "title": "IS 4151:2015 - Protective Helmets for Two-Wheeler Motorcyclists Specification",
+          "url": "https://www.bis.gov.in/product-certification/products-under-compulsory-certification/",
+          "excerpt": "Specifies materials, performance, impact absorption, chin strap strength, and peripheral vision requirements for helmets used by two-wheeler riders in India...."
+        }
+      ],
+      "timestamp": "2026-09-04T06:22:57.319Z"
+    },
+    {
+      "id": 35,
+      "question": "hi",
+      "answer": "📌 **IS 9873 (Part 1):2019: Safety of Toys - Safety Aspects Related to Mechanical and Physical Properties**\n\n• **Category:** Consumer Goods & Toys\n• **Certification Scheme:** Scheme-I (ISI Mark)\n• **Mandatory Status:** 🚨 Mandatory (Quality Control Order in Effect)\n\n**Description:**\nCovers safety parameters preventing sharp edges, small parts (choking hazard), toxic paint, flammable materials, and heavy metals in children's toys.\n\n**How to Get License (Step-by-Step):**\n1. Identify toy category (electric or non-electric)\n2. Set up safety testing equipment (drop test, pull test, sharp edge tester)\n3. Submit application on Manakonline portal\n4. BIS inspection of manufacturing process & paint source certification\n5. Chemical toxicity testing at BIS-recognized laboratory\n6. Grant of ISI mark license\n\n**Fees Structure:**\nApplication fee: ₹1,000 | Concessional marking fee for MSMEs (50% discount available)",
+      "category": "All",
+      "sources": [
+        {
+          "title": "IS 9873 (Part 1):2019 - Safety of Toys - Safety Aspects Related to Mechanical and Physical Properties",
+          "url": "https://www.bis.gov.in/product-certification/products-under-compulsory-certification/",
+          "excerpt": "Covers safety parameters preventing sharp edges, small parts (choking hazard), toxic paint, flammable materials, and heavy metals in children's toys...."
+        }
+      ],
+      "timestamp": "2026-09-04T06:22:26.853Z"
+    },
+    {
+      "id": 34,
+      "question": "किसी उत्पाद के लिए आईएसआई मार्क कैसे प्राप्त करें?",
+      "answer": "वर्तमान बीआईएस रिकॉर्ड में आपके इस प्रश्न का सीधा उत्तर नहीं मिला। हालांकि, बीआईएस 17 विभागों में 21,890+ भारतीय मानकों का प्रबंधन करता है। आप बीआईएस पोर्टल bis.gov.in पर अपने उत्पाद की स्थिति या मानक कोड खोज सकते हैं।",
+      "category": "All",
+      "sources": [
+        {
+          "title": "Bureau of Indian Standards Official Portal",
+          "url": "https://www.bis.gov.in",
+          "excerpt": "Search 21,890+ Indian Standards and official notifications."
+        }
+      ],
+      "timestamp": "2026-09-04T04:37:45.493Z"
+    },
+    {
+      "id": 33,
+      "question": "What parameters are tested under IS 10500 drinking water specification?",
+      "answer": "📌 **IS 14543:2016: Packaged Drinking Water (Other than Packaged Natural Mineral Water) Specification**\n\n• **Category:** Food & Beverages\n• **Certification Scheme:** Scheme-I (ISI Mark)\n• **Mandatory Status:** 🚨 Mandatory (Quality Control Order in Effect)\n\n**Description:**\nCovers physical, chemical, microbiological, radiological, and toxicological parameters for packaged drinking water filled in sealed containers.\n\n**How to Get License (Step-by-Step):**\n1. Ensure plant infrastructure has RO, UV sterilization, ozonation & clean filling line\n2. Setup fully equipped micro-biology and chemical testing lab at plant\n3. Apply online via Manakonline portal under IS 14543\n4. BIS audit of plant hygiene, water source report & manufacturing machinery\n5. Draw water samples for 30-day comprehensive chemical & microbiological testing\n6. License granted upon satisfactory lab test reports\n\n**Fees Structure:**\nApplication fee: ₹1,000 | Marking fee: ₹87 per 1,000 litres packaged water | Renewal: Annual",
+      "category": "Food & Beverages",
+      "sources": [
+        {
+          "title": "IS 14543:2016 - Packaged Drinking Water (Other than Packaged Natural Mineral Water) Specification",
+          "url": "https://www.bis.gov.in/index.php/standards/technical-departments/food-and-agriculture-department/",
+          "excerpt": "Covers physical, chemical, microbiological, radiological, and toxicological parameters for packaged drinking water filled in sealed containers...."
+        },
+        {
+          "title": "IS 10500:2012 - Drinking Water Specification",
+          "url": "https://www.bis.gov.in/index.php/standards/",
+          "excerpt": "Defines acceptable and permissible limits for 60+ parameters including pH, total dissolved solids (TDS), turbidity, heavy metals (Lead, Arsenic), nitrates, and ..."
+        },
+        {
+          "title": "BIS Compulsory Certification List: Packaged Drinking Water (IS 14543:2016)",
+          "url": "https://www.bis.gov.in/product-certification/products-under-compulsory-certification/",
+          "excerpt": "Mandatory certification under FSSAI & BIS regulations. Requires in-house microbiology & chemical laboratory."
+        }
+      ],
+      "timestamp": "2026-09-03T08:20:44.983Z"
+    },
+    {
+      "id": 32,
+      "question": "what is BIS",
+      "answer": "💡 **उत्तर:**\nManufacturing, importing, stocking, or selling products covered under mandatory Quality Control Orders (QCO) without a valid BIS license or ISI mark is a serious criminal offense under Section 29 of the BIS Act, 2016. Penalties include: 1) Imprisonment up to 2 years. 2) Fine of minimum ₹2 Lakhs up to 10 times the value of non-compliant goods seized. 3) Seizure and destruction of non-compliant stock from market outlets.",
+      "category": "All",
+      "sources": [
+        {
+          "title": "BIS Official Process Guide - What happens if a company sells a product under mandatory QCO without an ISI mark?",
+          "url": "https://www.bis.gov.in/enforcement-and-surveillance/",
+          "excerpt": "Manufacturing, importing, stocking, or selling products covered under mandatory Quality Control Orders (QCO) without a valid BIS license or ISI mark is a seriou..."
+        },
+        {
+          "title": "BIS Official Process Guide - What is the difference between ISI Mark (Scheme-I) and CRS (Scheme-II)?",
+          "url": "https://www.bis.gov.in/product-certification/product-certification-schemes/",
+          "excerpt": "The ISI Mark (Scheme-I) applies to physical products like helmets, packaged water, steel, pressure cookers, and cement. It requires a mandatory physical factory..."
+        },
+        {
+          "title": "IS 4151:2015 - Protective Helmets for Two-Wheeler Motorcyclists Specification",
+          "url": "https://www.bis.gov.in/product-certification/products-under-compulsory-certification/",
+          "excerpt": "Specifies materials, performance, impact absorption, chin strap strength, and peripheral vision requirements for helmets used by two-wheeler riders in India...."
+        }
+      ],
+      "timestamp": "2026-09-03T08:19:59.380Z"
+    },
+    {
+      "id": 31,
+      "question": "what is BIS",
+      "answer": "💡 **उत्तर:**\nManufacturing, importing, stocking, or selling products covered under mandatory Quality Control Orders (QCO) without a valid BIS license or ISI mark is a serious criminal offense under Section 29 of the BIS Act, 2016. Penalties include: 1) Imprisonment up to 2 years. 2) Fine of minimum ₹2 Lakhs up to 10 times the value of non-compliant goods seized. 3) Seizure and destruction of non-compliant stock from market outlets.",
+      "category": "All",
+      "sources": [
+        {
+          "title": "BIS Official Process Guide - What happens if a company sells a product under mandatory QCO without an ISI mark?",
+          "url": "https://www.bis.gov.in/enforcement-and-surveillance/",
+          "excerpt": "Manufacturing, importing, stocking, or selling products covered under mandatory Quality Control Orders (QCO) without a valid BIS license or ISI mark is a seriou..."
+        },
+        {
+          "title": "BIS Official Process Guide - What is the difference between ISI Mark (Scheme-I) and CRS (Scheme-II)?",
+          "url": "https://www.bis.gov.in/product-certification/product-certification-schemes/",
+          "excerpt": "The ISI Mark (Scheme-I) applies to physical products like helmets, packaged water, steel, pressure cookers, and cement. It requires a mandatory physical factory..."
+        },
+        {
+          "title": "IS 4151:2015 - Protective Helmets for Two-Wheeler Motorcyclists Specification",
+          "url": "https://www.bis.gov.in/product-certification/products-under-compulsory-certification/",
+          "excerpt": "Specifies materials, performance, impact absorption, chin strap strength, and peripheral vision requirements for helmets used by two-wheeler riders in India...."
+        }
+      ],
+      "timestamp": "2026-09-03T06:32:52.829Z"
+    },
+    {
+      "id": 30,
+      "question": "what is BIS",
+      "answer": "💡 **उत्तर:**\nManufacturing, importing, stocking, or selling products covered under mandatory Quality Control Orders (QCO) without a valid BIS license or ISI mark is a serious criminal offense under Section 29 of the BIS Act, 2016. Penalties include: 1) Imprisonment up to 2 years. 2) Fine of minimum ₹2 Lakhs up to 10 times the value of non-compliant goods seized. 3) Seizure and destruction of non-compliant stock from market outlets.",
+      "category": "All",
+      "sources": [
+        {
+          "title": "BIS Official Process Guide - What happens if a company sells a product under mandatory QCO without an ISI mark?",
+          "url": "https://www.bis.gov.in/enforcement-and-surveillance/",
+          "excerpt": "Manufacturing, importing, stocking, or selling products covered under mandatory Quality Control Orders (QCO) without a valid BIS license or ISI mark is a seriou..."
+        },
+        {
+          "title": "BIS Official Process Guide - What is the difference between ISI Mark (Scheme-I) and CRS (Scheme-II)?",
+          "url": "https://www.bis.gov.in/product-certification/product-certification-schemes/",
+          "excerpt": "The ISI Mark (Scheme-I) applies to physical products like helmets, packaged water, steel, pressure cookers, and cement. It requires a mandatory physical factory..."
+        },
+        {
+          "title": "IS 4151:2015 - Protective Helmets for Two-Wheeler Motorcyclists Specification",
+          "url": "https://www.bis.gov.in/product-certification/products-under-compulsory-certification/",
+          "excerpt": "Specifies materials, performance, impact absorption, chin strap strength, and peripheral vision requirements for helmets used by two-wheeler riders in India...."
+        }
+      ],
+      "timestamp": "2026-09-03T06:01:10.832Z"
+    },
+    {
+      "id": 29,
+      "question": "What is the penalty for selling without BIS ISI mark?",
+      "answer": "💡 **उत्तर:**\nManufacturing, importing, stocking, or selling products covered under mandatory Quality Control Orders (QCO) without a valid BIS license or ISI mark is a serious criminal offense under Section 29 of the BIS Act, 2016. Penalties include: 1) Imprisonment up to 2 years. 2) Fine of minimum ₹2 Lakhs up to 10 times the value of non-compliant goods seized. 3) Seizure and destruction of non-compliant stock from market outlets.",
+      "category": "All",
+      "sources": [
+        {
+          "title": "BIS Official Process Guide - What happens if a company sells a product under mandatory QCO without an ISI mark?",
+          "url": "https://www.bis.gov.in/enforcement-and-surveillance/",
+          "excerpt": "Manufacturing, importing, stocking, or selling products covered under mandatory Quality Control Orders (QCO) without a valid BIS license or ISI mark is a seriou..."
+        },
+        {
+          "title": "BIS Official Process Guide - What is the difference between ISI Mark (Scheme-I) and CRS (Scheme-II)?",
+          "url": "https://www.bis.gov.in/product-certification/product-certification-schemes/",
+          "excerpt": "The ISI Mark (Scheme-I) applies to physical products like helmets, packaged water, steel, pressure cookers, and cement. It requires a mandatory physical factory..."
+        },
+        {
+          "title": "IS 4151:2015 - Protective Helmets for Two-Wheeler Motorcyclists Specification",
+          "url": "https://www.bis.gov.in/product-certification/products-under-compulsory-certification/",
+          "excerpt": "Specifies materials, performance, impact absorption, chin strap strength, and peripheral vision requirements for helmets used by two-wheeler riders in India...."
+        }
+      ],
+      "timestamp": "2026-09-03T06:00:44.243Z"
+    },
+    {
+      "id": 28,
+      "question": "what is BIS",
+      "answer": "💡 **उत्तर:**\nManufacturing, importing, stocking, or selling products covered under mandatory Quality Control Orders (QCO) without a valid BIS license or ISI mark is a serious criminal offense under Section 29 of the BIS Act, 2016. Penalties include: 1) Imprisonment up to 2 years. 2) Fine of minimum ₹2 Lakhs up to 10 times the value of non-compliant goods seized. 3) Seizure and destruction of non-compliant stock from market outlets.",
+      "category": "Safety",
+      "sources": [
+        {
+          "title": "BIS Official Process Guide - What happens if a company sells a product under mandatory QCO without an ISI mark?",
+          "url": "https://www.bis.gov.in/enforcement-and-surveillance/",
+          "excerpt": "Manufacturing, importing, stocking, or selling products covered under mandatory Quality Control Orders (QCO) without a valid BIS license or ISI mark is a seriou..."
+        },
+        {
+          "title": "BIS Official Process Guide - What is the difference between ISI Mark (Scheme-I) and CRS (Scheme-II)?",
+          "url": "https://www.bis.gov.in/product-certification/product-certification-schemes/",
+          "excerpt": "The ISI Mark (Scheme-I) applies to physical products like helmets, packaged water, steel, pressure cookers, and cement. It requires a mandatory physical factory..."
+        },
+        {
+          "title": "IS 4151:2015 - Protective Helmets for Two-Wheeler Motorcyclists Specification",
+          "url": "https://www.bis.gov.in/product-certification/products-under-compulsory-certification/",
+          "excerpt": "Specifies materials, performance, impact absorption, chin strap strength, and peripheral vision requirements for helmets used by two-wheeler riders in India...."
+        }
+      ],
+      "timestamp": "2026-09-03T05:44:23.266Z"
+    },
+    {
+      "id": 27,
+      "question": "what is BIS",
+      "answer": "💡 **उत्तर:**\nManufacturing, importing, stocking, or selling products covered under mandatory Quality Control Orders (QCO) without a valid BIS license or ISI mark is a serious criminal offense under Section 29 of the BIS Act, 2016. Penalties include: 1) Imprisonment up to 2 years. 2) Fine of minimum ₹2 Lakhs up to 10 times the value of non-compliant goods seized. 3) Seizure and destruction of non-compliant stock from market outlets.",
+      "category": "Safety",
+      "sources": [
+        {
+          "title": "BIS Official Process Guide - What happens if a company sells a product under mandatory QCO without an ISI mark?",
+          "url": "https://www.bis.gov.in/enforcement-and-surveillance/",
+          "excerpt": "Manufacturing, importing, stocking, or selling products covered under mandatory Quality Control Orders (QCO) without a valid BIS license or ISI mark is a seriou..."
+        },
+        {
+          "title": "BIS Official Process Guide - What is the difference between ISI Mark (Scheme-I) and CRS (Scheme-II)?",
+          "url": "https://www.bis.gov.in/product-certification/product-certification-schemes/",
+          "excerpt": "The ISI Mark (Scheme-I) applies to physical products like helmets, packaged water, steel, pressure cookers, and cement. It requires a mandatory physical factory..."
+        },
+        {
+          "title": "IS 4151:2015 - Protective Helmets for Two-Wheeler Motorcyclists Specification",
+          "url": "https://www.bis.gov.in/product-certification/products-under-compulsory-certification/",
+          "excerpt": "Specifies materials, performance, impact absorption, chin strap strength, and peripheral vision requirements for helmets used by two-wheeler riders in India...."
+        }
+      ],
+      "timestamp": "2026-09-03T05:43:57.026Z"
+    },
+    {
+      "id": 26,
+      "question": "what is BIS",
+      "answer": "💡 **उत्तर:**\nManufacturing, importing, stocking, or selling products covered under mandatory Quality Control Orders (QCO) without a valid BIS license or ISI mark is a serious criminal offense under Section 29 of the BIS Act, 2016. Penalties include: 1) Imprisonment up to 2 years. 2) Fine of minimum ₹2 Lakhs up to 10 times the value of non-compliant goods seized. 3) Seizure and destruction of non-compliant stock from market outlets.",
+      "category": "Safety",
+      "sources": [
+        {
+          "title": "BIS Official Process Guide - What happens if a company sells a product under mandatory QCO without an ISI mark?",
+          "url": "https://www.bis.gov.in/enforcement-and-surveillance/",
+          "excerpt": "Manufacturing, importing, stocking, or selling products covered under mandatory Quality Control Orders (QCO) without a valid BIS license or ISI mark is a seriou..."
+        },
+        {
+          "title": "BIS Official Process Guide - What is the difference between ISI Mark (Scheme-I) and CRS (Scheme-II)?",
+          "url": "https://www.bis.gov.in/product-certification/product-certification-schemes/",
+          "excerpt": "The ISI Mark (Scheme-I) applies to physical products like helmets, packaged water, steel, pressure cookers, and cement. It requires a mandatory physical factory..."
+        },
+        {
+          "title": "IS 4151:2015 - Protective Helmets for Two-Wheeler Motorcyclists Specification",
+          "url": "https://www.bis.gov.in/product-certification/products-under-compulsory-certification/",
+          "excerpt": "Specifies materials, performance, impact absorption, chin strap strength, and peripheral vision requirements for helmets used by two-wheeler riders in India...."
+        }
+      ],
+      "timestamp": "2026-09-03T05:43:54.483Z"
+    },
+    {
+      "id": 25,
+      "question": "laptop",
+      "answer": "🔍 **Laptop and Mobile Phone Chargers**\n\n• **Is BIS Certification Mandatory?** YES 🚨 (Compulsory by Law)\n• **Applicable Standard:** IS 13252 (Part 1):2010\n• **Certification Scheme:** Scheme-II (CRS)\n• **Regulating Ministry:** MeitY CRS Notification\n\n**Summary:**\nMandatory CRS registration with BIS R-Number printed on packaging.",
+      "category": "Electronics",
+      "sources": [
+        {
+          "title": "BIS Compulsory Certification List: Laptop and Mobile Phone Chargers (IS 13252 (Part 1):2010)",
+          "url": "https://www.crsbis.in/BIS/",
+          "excerpt": "Mandatory CRS registration with BIS R-Number printed on packaging."
+        },
+        {
+          "title": "IS 13252 (Part 1):2010 - Information Technology Equipment - Safety - General Requirements",
+          "url": "https://www.crsbis.in/BIS/",
+          "excerpt": "Ensures electrical, thermal, energy, and mechanical safety for IT products to prevent electric shocks, battery fires, and user injuries...."
+        }
+      ],
+      "timestamp": "2026-09-03T05:05:19.797Z"
+    },
+    {
+      "id": 24,
+      "question": "circuit",
+      "answer": "I couldn't find an exact match in the current BIS records for your specific question. However, BIS manages over 21,890+ Indian Standards across 17 departments. You can check your product status on the official website bis.gov.in or search for standard codes directly.",
+      "category": "Electronics",
+      "sources": [
+        {
+          "title": "Bureau of Indian Standards Official Portal",
+          "url": "https://www.bis.gov.in",
+          "excerpt": "Search 21,890+ Indian Standards and official notifications."
+        }
+      ],
+      "timestamp": "2026-09-03T05:03:44.194Z"
+    },
+    {
+      "id": 23,
+      "question": "What are Quality Control Orders (QCOs)?",
+      "answer": "💡 **उत्तर:**\nManufacturing, importing, stocking, or selling products covered under mandatory Quality Control Orders (QCO) without a valid BIS license or ISI mark is a serious criminal offense under Section 29 of the BIS Act, 2016. Penalties include: 1) Imprisonment up to 2 years. 2) Fine of minimum ₹2 Lakhs up to 10 times the value of non-compliant goods seized. 3) Seizure and destruction of non-compliant stock from market outlets.",
+      "category": "All",
+      "sources": [
+        {
+          "title": "BIS Official Process Guide - What happens if a company sells a product under mandatory QCO without an ISI mark?",
+          "url": "https://www.bis.gov.in/enforcement-and-surveillance/",
+          "excerpt": "Manufacturing, importing, stocking, or selling products covered under mandatory Quality Control Orders (QCO) without a valid BIS license or ISI mark is a seriou..."
+        },
+        {
+          "title": "IS 14543:2016 - Packaged Drinking Water (Other than Packaged Natural Mineral Water) Specification",
+          "url": "https://www.bis.gov.in/index.php/standards/technical-departments/food-and-agriculture-department/",
+          "excerpt": "Covers physical, chemical, microbiological, radiological, and toxicological parameters for packaged drinking water filled in sealed containers...."
+        },
+        {
+          "title": "BIS Compulsory Certification List: Helmet for Two-Wheelers (IS 4151:2015)",
+          "url": "https://www.bis.gov.in/product-certification/products-under-compulsory-certification/",
+          "excerpt": "Mandatory Quality Control Order in effect since June 1, 2021. Selling non-ISI helmets is punishable by law."
+        }
+      ],
+      "timestamp": "2026-09-03T04:49:02.607Z"
+    },
+    {
+      "id": 22,
+      "question": "मुझे बाजार में नया पदार्थ लॉन्च करना है तो वो कैसे करू",
+      "answer": "वर्तमान बीआईएस रिकॉर्ड में आपके इस प्रश्न का सीधा उत्तर नहीं मिला। हालांकि, बीआईएस 17 विभागों में 21,890+ भारतीय मानकों का प्रबंधन करता है। आप बीआईएस पोर्टल bis.gov.in पर अपने उत्पाद की स्थिति या मानक कोड खोज सकते हैं।",
+      "category": "All",
+      "sources": [
+        {
+          "title": "Bureau of Indian Standards Official Portal",
+          "url": "https://www.bis.gov.in",
+          "excerpt": "Search 21,890+ Indian Standards and official notifications."
+        }
+      ],
+      "timestamp": "2026-09-02T19:25:00.874Z"
+    },
+    {
+      "id": 21,
+      "question": "मुझे बाजार में नया पदार्थ लॉन्च करना है तो वो कैसे करू",
+      "answer": "I couldn't find an exact match in the current BIS records for your specific question. However, BIS manages over 21,890+ Indian Standards across 17 departments. You can check your product status on the official website or search for standard codes directly.",
+      "category": "All",
+      "sources": [
+        {
+          "title": "Bureau of Indian Standards Official Portal",
+          "url": "https://www.bis.gov.in",
+          "excerpt": "Search 21,890+ Indian Standards and official notifications."
+        }
+      ],
+      "timestamp": "2026-09-02T19:24:33.967Z"
+    },
+    {
+      "id": 20,
+      "question": "मुझे बाजार में नया पदार्थ लॉन्च करना है तो वो कैसे करू",
+      "answer": "I couldn't find an exact match in the current BIS records for your specific question. However, BIS manages over 21,890+ Indian Standards across 17 departments. You can check your product status on the official website or search for standard codes directly.",
+      "category": "All",
+      "sources": [
+        {
+          "title": "Bureau of Indian Standards Official Portal",
+          "url": "https://www.bis.gov.in",
+          "excerpt": "Search 21,890+ Indian Standards and official notifications."
+        }
+      ],
+      "timestamp": "2026-09-02T19:18:07.151Z"
+    },
+    {
+      "id": 19,
+      "question": "मुझे बाजार में नया पदार्थ लॉन्च करना है तो बी आय का",
+      "answer": "I couldn't find an exact match in the current BIS records for your specific question. However, BIS manages over 21,890+ Indian Standards across 17 departments. You can check your product status on the official website or search for standard codes directly.",
+      "category": "All",
+      "sources": [
+        {
+          "title": "Bureau of Indian Standards Official Portal",
+          "url": "https://www.bis.gov.in",
+          "excerpt": "Search 21,890+ Indian Standards and official notifications."
+        }
+      ],
+      "timestamp": "2026-09-02T19:17:38.465Z"
+    },
+    {
+      "id": 18,
+      "question": "hello everyone",
+      "answer": "I couldn't find an exact match in the current BIS records for your specific question. However, BIS manages over 21,890+ Indian Standards across 17 departments. You can check your product status on the official website or search for standard codes directly.",
+      "category": "All",
+      "sources": [
+        {
+          "title": "Bureau of Indian Standards Official Portal",
+          "url": "https://www.bis.gov.in",
+          "excerpt": "Search 21,890+ Indian Standards and official notifications."
+        }
+      ],
+      "timestamp": "2026-09-02T19:16:38.124Z"
+    },
+    {
+      "id": 17,
+      "question": "hello how can I get eyesight",
+      "answer": "💡 **उत्तर:**\nUnder the Micro, Small and Medium Enterprises (MSME) incentive policy of BIS: 1) Micro enterprises get a 80% concession on marking fees. 2) Small enterprises get a 50% concession on marking fees. 3) Startups registered under DPIIT get 50% concession on marking fees. Additionally, women entrepreneurs and micro-enterprises operating in North-Eastern regions receive special fee waivers. To claim concessions, upload your Udyam Registration Certificate or DPIIT Recognition Certificate during application on Manakonline.",
+      "category": "All",
+      "sources": [
+        {
+          "title": "BIS Official Process Guide - How can an MSME or Startup get discount on BIS certification fees?",
+          "url": "https://www.manakonline.in/MANAK/ApplicationLicenceRelatedrpt",
+          "excerpt": "Under the Micro, Small and Medium Enterprises (MSME) incentive policy of BIS: 1) Micro enterprises get a 80% concession on marking fees. 2) Small enterprises ge..."
+        },
+        {
+          "title": "BIS Official Process Guide - How to verify if a gold jewellery hallmark HUID is genuine?",
+          "url": "https://www.bis.gov.in/hallmarking-overview/",
+          "excerpt": "Consumers can instantly verify gold hallmark purity using the official BIS Care mobile app or online portal: 1) Locate the 6-digit alphanumeric HUID (e.g. AB123..."
+        },
+        {
+          "title": "BIS Official Process Guide - How can foreign manufacturers export certified goods to India (FMCS)?",
+          "url": "https://www.bis.gov.in/fmcs/",
+          "excerpt": "Foreign manufacturers must apply under the Foreign Manufacturers Certification Scheme (FMCS): 1) Appoint an Authorized Indian Representative (AIR) residing in I..."
+        }
+      ],
+      "timestamp": "2026-09-02T19:13:57.486Z"
+    },
+    {
+      "id": 16,
+      "question": "hello hello everyone",
+      "answer": "I couldn't find an exact match in the current BIS records for your specific question. However, BIS manages over 21,890+ Indian Standards across 17 departments. You can check your product status on the official website or search for standard codes directly.",
+      "category": "All",
+      "sources": [
+        {
+          "title": "Bureau of Indian Standards Official Portal",
+          "url": "https://www.bis.gov.in",
+          "excerpt": "Search 21,890+ Indian Standards and official notifications."
+        }
+      ],
+      "timestamp": "2026-09-02T19:13:16.867Z"
+    },
+    {
+      "id": 15,
+      "question": "What is the difference between ISI mark and CRS?",
+      "answer": "💡 **उत्तर:**\nआईएसआई मार्क (स्कीम-I) हेलमेट, पैकेज्ड पानी, स्टील, प्रेशर कुकर और सीमेंट जैसे भौतिक उत्पादों पर लागू होता है। इसके लिए बीआईएस अधिकारियों द्वारा अनिवार्य कारखाने के निरीक्षण और इन-हाउस प्रयोगशाला परीक्षण की आवश्यकता होती है। सीआरएस (स्कीम-II) मुख्य रूप से इलेक्ट्रॉनिक और आईटी उत्पादों (एलईडी बल्ब, लैपटॉप, चार्जर) को कवर करता है। सीआरएस के तहत पंजीकरण से पहले किसी कारखाने के निरीक्षण की आवश्यकता नहीं होती; निर्माता बीआईएस मान्यता प्राप्त लैब में परीक्षण करवाते हैं और ऑनलाइन आर-नंबर प्राप्त करते हैं।",
+      "category": "All",
+      "sources": [
+        {
+          "title": "BIS Official Process Guide - What is the difference between ISI Mark (Scheme-I) and CRS (Scheme-II)?",
+          "url": "https://www.bis.gov.in/product-certification/product-certification-schemes/",
+          "excerpt": "The ISI Mark (Scheme-I) applies to physical products like helmets, packaged water, steel, pressure cookers, and cement. It requires a mandatory physical factory..."
+        },
+        {
+          "title": "BIS Official Process Guide - What happens if a company sells a product under mandatory QCO without an ISI mark?",
+          "url": "https://www.bis.gov.in/enforcement-and-surveillance/",
+          "excerpt": "Manufacturing, importing, stocking, or selling products covered under mandatory Quality Control Orders (QCO) without a valid BIS license or ISI mark is a seriou..."
+        },
+        {
+          "title": "IS 4151:2015 - Protective Helmets for Two-Wheeler Motorcyclists Specification",
+          "url": "https://www.bis.gov.in/product-certification/products-under-compulsory-certification/",
+          "excerpt": "Specifies materials, performance, impact absorption, chin strap strength, and peripheral vision requirements for helmets used by two-wheeler riders in India...."
+        }
+      ],
+      "timestamp": "2026-09-02T18:48:55.444Z"
+    },
+    {
+      "id": 14,
+      "question": "What is the difference between ISI mark and CRS?",
+      "answer": "💡 **Answer:**\nThe ISI Mark (Scheme-I) applies to physical products like helmets, packaged water, steel, pressure cookers, and cement. It requires a mandatory physical factory inspection by BIS officers and in-house testing facilities before a license is granted. CRS (Compulsory Registration Scheme / Scheme-II) primarily covers electronic and IT products (LED bulbs, laptops, chargers, solar inverters). Under CRS, no factory inspection is required prior to registration; manufacturers test products at a BIS-recognized NABL lab and register online to receive a unique R-Number.",
+      "category": "All",
+      "sources": [
+        {
+          "title": "BIS Official Process Guide - What is the difference between ISI Mark (Scheme-I) and CRS (Scheme-II)?",
+          "url": "https://www.bis.gov.in/product-certification/product-certification-schemes/",
+          "excerpt": "The ISI Mark (Scheme-I) applies to physical products like helmets, packaged water, steel, pressure cookers, and cement. It requires a mandatory physical factory..."
+        },
+        {
+          "title": "BIS Official Process Guide - What happens if a company sells a product under mandatory QCO without an ISI mark?",
+          "url": "https://www.bis.gov.in/enforcement-and-surveillance/",
+          "excerpt": "Manufacturing, importing, stocking, or selling products covered under mandatory Quality Control Orders (QCO) without a valid BIS license or ISI mark is a seriou..."
+        },
+        {
+          "title": "IS 4151:2015 - Protective Helmets for Two-Wheeler Motorcyclists Specification",
+          "url": "https://www.bis.gov.in/product-certification/products-under-compulsory-certification/",
+          "excerpt": "Specifies materials, performance, impact absorption, chin strap strength, and peripheral vision requirements for helmets used by two-wheeler riders in India...."
+        }
+      ],
+      "timestamp": "2026-09-02T18:48:19.698Z"
+    },
+    {
+      "id": 13,
+      "question": "What is the difference between ISI mark and CRS?",
+      "answer": "💡 **Answer:**\nThe ISI Mark (Scheme-I) applies to physical products like helmets, packaged water, steel, pressure cookers, and cement. It requires a mandatory physical factory inspection by BIS officers and in-house testing facilities before a license is granted. CRS (Compulsory Registration Scheme / Scheme-II) primarily covers electronic and IT products (LED bulbs, laptops, chargers, solar inverters). Under CRS, no factory inspection is required prior to registration; manufacturers test products at a BIS-recognized NABL lab and register online to receive a unique R-Number.",
+      "category": "All",
+      "sources": [
+        {
+          "title": "BIS Official Process Guide - What is the difference between ISI Mark (Scheme-I) and CRS (Scheme-II)?",
+          "url": "https://www.bis.gov.in/product-certification/product-certification-schemes/",
+          "excerpt": "The ISI Mark (Scheme-I) applies to physical products like helmets, packaged water, steel, pressure cookers, and cement. It requires a mandatory physical factory..."
+        },
+        {
+          "title": "BIS Official Process Guide - What happens if a company sells a product under mandatory QCO without an ISI mark?",
+          "url": "https://www.bis.gov.in/enforcement-and-surveillance/",
+          "excerpt": "Manufacturing, importing, stocking, or selling products covered under mandatory Quality Control Orders (QCO) without a valid BIS license or ISI mark is a seriou..."
+        },
+        {
+          "title": "IS 4151:2015 - Protective Helmets for Two-Wheeler Motorcyclists Specification",
+          "url": "https://www.bis.gov.in/product-certification/products-under-compulsory-certification/",
+          "excerpt": "Specifies materials, performance, impact absorption, chin strap strength, and peripheral vision requirements for helmets used by two-wheeler riders in India...."
+        }
+      ],
+      "timestamp": "2026-09-02T18:36:41.635Z"
+    },
+    {
+      "id": 12,
+      "question": "What is the difference between ISI mark and CRS?",
+      "answer": "💡 **Answer:**\nThe ISI Mark (Scheme-I) applies to physical products like helmets, packaged water, steel, pressure cookers, and cement. It requires a mandatory physical factory inspection by BIS officers and in-house testing facilities before a license is granted. CRS (Compulsory Registration Scheme / Scheme-II) primarily covers electronic and IT products (LED bulbs, laptops, chargers, solar inverters). Under CRS, no factory inspection is required prior to registration; manufacturers test products at a BIS-recognized NABL lab and register online to receive a unique R-Number.",
+      "category": "All",
+      "sources": [
+        {
+          "title": "BIS Official Process Guide - What is the difference between ISI Mark (Scheme-I) and CRS (Scheme-II)?",
+          "url": "https://www.bis.gov.in/product-certification/product-certification-schemes/",
+          "excerpt": "The ISI Mark (Scheme-I) applies to physical products like helmets, packaged water, steel, pressure cookers, and cement. It requires a mandatory physical factory..."
+        },
+        {
+          "title": "BIS Official Process Guide - What happens if a company sells a product under mandatory QCO without an ISI mark?",
+          "url": "https://www.bis.gov.in/enforcement-and-surveillance/",
+          "excerpt": "Manufacturing, importing, stocking, or selling products covered under mandatory Quality Control Orders (QCO) without a valid BIS license or ISI mark is a seriou..."
+        },
+        {
+          "title": "IS 4151:2015 - Protective Helmets for Two-Wheeler Motorcyclists Specification",
+          "url": "https://www.bis.gov.in/product-certification/products-under-compulsory-certification/",
+          "excerpt": "Specifies materials, performance, impact absorption, chin strap strength, and peripheral vision requirements for helmets used by two-wheeler riders in India...."
+        }
+      ],
+      "timestamp": "2026-09-02T18:33:50.137Z"
+    },
+    {
+      "id": 11,
+      "question": "What parameters are tested under IS 10500 drinking water specification?",
+      "answer": "📌 **IS 14543:2016: Packaged Drinking Water (Other than Packaged Natural Mineral Water) Specification**\n\n• **Category:** Food & Beverages\n• **Certification Scheme:** Scheme-I (ISI Mark)\n• **Mandatory Status:** 🚨 Mandatory (Quality Control Order in Effect)\n\n**Description:**\nCovers physical, chemical, microbiological, radiological, and toxicological parameters for packaged drinking water filled in sealed containers.\n\n**How to Get License (Step-by-Step):**\n1. Ensure plant infrastructure has RO, UV sterilization, ozonation & clean filling line\n2. Setup fully equipped micro-biology and chemical testing lab at plant\n3. Apply online via Manakonline portal under IS 14543\n4. BIS audit of plant hygiene, water source report & manufacturing machinery\n5. Draw water samples for 30-day comprehensive chemical & microbiological testing\n6. License granted upon satisfactory lab test reports\n\n**Fees Structure:**\nApplication fee: ₹1,000 | Marking fee: ₹87 per 1,000 litres packaged water | Renewal: Annual",
+      "category": "Food & Beverages",
+      "sources": [
+        {
+          "title": "IS 14543:2016 - Packaged Drinking Water (Other than Packaged Natural Mineral Water) Specification",
+          "url": "https://www.bis.gov.in/index.php/standards/technical-departments/food-and-agriculture-department/",
+          "excerpt": "Covers physical, chemical, microbiological, radiological, and toxicological parameters for packaged drinking water filled in sealed containers...."
+        },
+        {
+          "title": "IS 10500:2012 - Drinking Water Specification",
+          "url": "https://www.bis.gov.in/index.php/standards/",
+          "excerpt": "Defines acceptable and permissible limits for 60+ parameters including pH, total dissolved solids (TDS), turbidity, heavy metals (Lead, Arsenic), nitrates, and ..."
+        },
+        {
+          "title": "BIS Compulsory Certification List: Packaged Drinking Water (IS 14543:2016)",
+          "url": "https://www.bis.gov.in/product-certification/products-under-compulsory-certification/",
+          "excerpt": "Mandatory certification under FSSAI & BIS regulations. Requires in-house microbiology & chemical laboratory."
+        }
+      ],
+      "timestamp": "2026-09-02T18:33:14.045Z"
+    },
+    {
+      "id": 10,
+      "question": "what is BIS",
+      "answer": "💡 **Answer:**\nManufacturing, importing, stocking, or selling products covered under mandatory Quality Control Orders (QCO) without a valid BIS license or ISI mark is a serious criminal offense under Section 29 of the BIS Act, 2016. Penalties include: 1) Imprisonment up to 2 years. 2) Fine of minimum ₹2 Lakhs up to 10 times the value of non-compliant goods seized. 3) Seizure and destruction of non-compliant stock from market outlets.",
+      "category": "All",
+      "sources": [
+        {
+          "title": "BIS Official Process Guide - What happens if a company sells a product under mandatory QCO without an ISI mark?",
+          "url": "https://www.bis.gov.in/enforcement-and-surveillance/",
+          "excerpt": "Manufacturing, importing, stocking, or selling products covered under mandatory Quality Control Orders (QCO) without a valid BIS license or ISI mark is a seriou..."
+        },
+        {
+          "title": "BIS Official Process Guide - What is the difference between ISI Mark (Scheme-I) and CRS (Scheme-II)?",
+          "url": "https://www.bis.gov.in/product-certification/product-certification-schemes/",
+          "excerpt": "The ISI Mark (Scheme-I) applies to physical products like helmets, packaged water, steel, pressure cookers, and cement. It requires a mandatory physical factory..."
+        },
+        {
+          "title": "IS 4151:2015 - Protective Helmets for Two-Wheeler Motorcyclists Specification",
+          "url": "https://www.bis.gov.in/product-certification/products-under-compulsory-certification/",
+          "excerpt": "Specifies materials, performance, impact absorption, chin strap strength, and peripheral vision requirements for helmets used by two-wheeler riders in India...."
+        }
+      ],
+      "timestamp": "2026-09-02T18:14:11.027Z"
+    },
+    {
+      "id": 9,
+      "question": "தங்க ஹால்மார்க் HUID சரிபார்ப்பது எப்படி?",
+      "answer": "💡 **Answer:**\nConsumers can instantly verify gold hallmark purity using the official BIS Care mobile app or online portal: 1) Locate the 6-digit alphanumeric HUID (e.g. AB1234) laser-etched on your gold jewellery. 2) Open the BIS Care App and tap 'Verify HUID'. 3) Enter the 6-digit code. 4) The app will display the registered jeweller name, hallmarking center name, date of hallmarking, article type, and purity grade (e.g., 22K916 or 18K750). If details do not match, file a complaint on the app.",
+      "category": "All",
+      "sources": [
+        {
+          "title": "BIS Official Process Guide - How to verify if a gold jewellery hallmark HUID is genuine?",
+          "url": "https://www.bis.gov.in/hallmarking-overview/",
+          "excerpt": "Consumers can instantly verify gold hallmark purity using the official BIS Care mobile app or online portal: 1) Locate the 6-digit alphanumeric HUID (e.g. AB123..."
+        },
+        {
+          "title": "BIS Compulsory Certification List: Gold Jewellery (IS 15820:2009)",
+          "url": "https://www.bis.gov.in/hallmarking-overview/",
+          "excerpt": "Mandatory 6-digit Hallmark Unique ID (HUID) laser-etched hallmarking for gold sold by registered jewellers."
+        },
+        {
+          "title": "IS 15820:2009 - General Requirements for Establishment and Operation of Assaying and Hallmarking Centres",
+          "url": "https://www.bis.gov.in/hallmarking-overview/",
+          "excerpt": "Governs registration of jewellers and authorization of Assaying & Hallmarking (A&HC) centres to apply 6-digit HUID (Hallmark Unique ID) on gold items (14K, 18K,..."
+        }
+      ],
+      "timestamp": "2026-09-02T16:54:57.626Z"
+    },
+    {
+      "id": 8,
+      "question": "हेलमेट के लिए आईएसआई मार्क कैसे प्राप्त करें?",
+      "answer": "🔍 **Product Compliance Status: Helmet for Two-Wheelers**\n\n• **Is BIS Certification Mandatory?** YES 🚨 (Compulsory by Law)\n• **Applicable Standard:** IS 4151:2015\n• **Scheme:** Scheme-I (ISI Mark)\n• **Regulating Ministry:** Ministry of Road Transport and Highways (MoRTH)\n\n**Summary:**\nMandatory Quality Control Order in effect since June 1, 2021. Selling non-ISI helmets is punishable by law.",
+      "category": "All",
+      "sources": [
+        {
+          "title": "BIS Compulsory Certification List: Helmet for Two-Wheelers (IS 4151:2015)",
+          "url": "https://www.bis.gov.in/product-certification/products-under-compulsory-certification/",
+          "excerpt": "Mandatory Quality Control Order in effect since June 1, 2021. Selling non-ISI helmets is punishable by law."
+        },
+        {
+          "title": "IS 4151:2015 - Protective Helmets for Two-Wheeler Motorcyclists Specification",
+          "url": "https://www.bis.gov.in/product-certification/products-under-compulsory-certification/",
+          "excerpt": "Specifies materials, performance, impact absorption, chin strap strength, and peripheral vision requirements for helmets used by two-wheeler riders in India...."
+        }
+      ],
+      "timestamp": "2026-09-02T16:54:37.558Z"
+    },
+    {
+      "id": 7,
+      "question": "Is packaged drinking water mandatory for BIS?",
+      "answer": "📌 **IS 14543:2016: Packaged Drinking Water (Other than Packaged Natural Mineral Water) Specification**\n\n• **Category:** Food & Beverages\n• **Certification Scheme:** Scheme-I (ISI Mark)\n• **Mandatory Status:** 🚨 Mandatory (Quality Control Order in Effect)\n\n**Description:**\nCovers physical, chemical, microbiological, radiological, and toxicological parameters for packaged drinking water filled in sealed containers.\n\n**How to Get License (Step-by-Step):**\n1. Ensure plant infrastructure has RO, UV sterilization, ozonation & clean filling line\n2. Setup fully equipped micro-biology and chemical testing lab at plant\n3. Apply online via Manakonline portal under IS 14543\n4. BIS audit of plant hygiene, water source report & manufacturing machinery\n5. Draw water samples for 30-day comprehensive chemical & microbiological testing\n6. License granted upon satisfactory lab test reports\n\n**Fees Structure:**\nApplication fee: ₹1,000 | Marking fee: ₹87 per 1,000 litres packaged water | Renewal: Annual",
+      "category": "All",
+      "sources": [
+        {
+          "title": "IS 14543:2016 - Packaged Drinking Water (Other than Packaged Natural Mineral Water) Specification",
+          "url": "https://www.bis.gov.in/index.php/standards/technical-departments/food-and-agriculture-department/",
+          "excerpt": "Covers physical, chemical, microbiological, radiological, and toxicological parameters for packaged drinking water filled in sealed containers...."
+        },
+        {
+          "title": "BIS Compulsory Certification List: Packaged Drinking Water (IS 14543:2016)",
+          "url": "https://www.bis.gov.in/product-certification/products-under-compulsory-certification/",
+          "excerpt": "Mandatory certification under FSSAI & BIS regulations. Requires in-house microbiology & chemical laboratory."
+        },
+        {
+          "title": "IS 10500:2012 - Drinking Water Specification",
+          "url": "https://www.bis.gov.in/index.php/standards/",
+          "excerpt": "Defines acceptable and permissible limits for 60+ parameters including pH, total dissolved solids (TDS), turbidity, heavy metals (Lead, Arsenic), nitrates, and ..."
+        }
+      ],
+      "timestamp": "2026-09-02T09:49:09.998Z"
+    },
+    {
+      "id": 6,
+      "question": "hello mujhe Mera product launch Karna Hai To Main Kya Kya kar sakta hun",
+      "answer": "🔍 **Product Compliance Status: LED Bulb / LED Lamp**\n\n• **Is BIS Certification Mandatory?** YES 🚨 (Compulsory by Law)\n• **Applicable Standard:** IS 16102 (Part 1):2012\n• **Scheme:** Scheme-II (Compulsory Registration Scheme - CRS)\n• **Regulating Ministry:** Ministry of Electronics and Information Technology (MeitY)\n\n**Summary:**\nMandatory registration under CRS. Product requires testing at NABL lab and registration number (R-xxxxxxx).",
+      "category": "All",
+      "sources": [
+        {
+          "title": "BIS Compulsory Certification List: LED Bulb / LED Lamp (IS 16102 (Part 1):2012)",
+          "url": "https://www.crsbis.in/BIS/",
+          "excerpt": "Mandatory registration under CRS. Product requires testing at NABL lab and registration number (R-xxxxxxx)."
+        },
+        {
+          "title": "IS 16102 (Part 1):2012 - Self-Ballasted LED Lamps for General Lighting Services - Safety Requirements",
+          "url": "https://www.crsbis.in/BIS/",
+          "excerpt": "Covers insulation resistance, electric shock protection, heat resistance, ingress protection, and fire resistance for LED bulbs used in homes and offices...."
+        },
+        {
+          "title": "BIS Official Process Guide - What happens if a company sells a product under mandatory QCO without an ISI mark?",
+          "url": "https://www.bis.gov.in/enforcement-and-surveillance/",
+          "excerpt": "Manufacturing, importing, stocking, or selling products covered under mandatory Quality Control Orders (QCO) without a valid BIS license or ISI mark is a seriou..."
+        }
+      ],
+      "timestamp": "2026-09-02T09:42:40.521Z"
+    },
+    {
+      "id": 5,
+      "question": "What is the difference between ISI mark and CRS?",
+      "answer": "💡 **Answer:**\nThe ISI Mark (Scheme-I) applies to physical products like helmets, packaged water, steel, pressure cookers, and cement. It requires a mandatory physical factory inspection by BIS officers and in-house testing facilities before a license is granted. CRS (Compulsory Registration Scheme / Scheme-II) primarily covers electronic and IT products (LED bulbs, laptops, chargers, solar inverters). Under CRS, no factory inspection is required prior to registration; manufacturers test products at a BIS-recognized NABL lab and register online to receive a unique R-Number.",
+      "category": "Precious Metals",
+      "sources": [
+        {
+          "title": "BIS Official Process Guide - What is the difference between ISI Mark (Scheme-I) and CRS (Scheme-II)?",
+          "url": "https://www.bis.gov.in/product-certification/product-certification-schemes/",
+          "excerpt": "The ISI Mark (Scheme-I) applies to physical products like helmets, packaged water, steel, pressure cookers, and cement. It requires a mandatory physical factory..."
+        },
+        {
+          "title": "BIS Official Process Guide - What happens if a company sells a product under mandatory QCO without an ISI mark?",
+          "url": "https://www.bis.gov.in/enforcement-and-surveillance/",
+          "excerpt": "Manufacturing, importing, stocking, or selling products covered under mandatory Quality Control Orders (QCO) without a valid BIS license or ISI mark is a seriou..."
+        },
+        {
+          "title": "BIS Compulsory Certification List: Children Toys (IS 9873 (Part 1):2019)",
+          "url": "https://www.bis.gov.in/product-certification/products-under-compulsory-certification/",
+          "excerpt": "Mandatory ISI mark for all electric and non-electric toys manufactured or imported into India."
+        }
+      ],
+      "timestamp": "2026-09-01T19:30:11.933Z"
+    },
+    {
+      "id": 4,
+      "question": "How can an MSME get discount on BIS certification fees?",
+      "answer": "💡 **Answer:**\nUnder the Micro, Small and Medium Enterprises (MSME) incentive policy of BIS: 1) Micro enterprises get a 80% concession on marking fees. 2) Small enterprises get a 50% concession on marking fees. 3) Startups registered under DPIIT get 50% concession on marking fees. Additionally, women entrepreneurs and micro-enterprises operating in North-Eastern regions receive special fee waivers. To claim concessions, upload your Udyam Registration Certificate or DPIIT Recognition Certificate during application on Manakonline.",
+      "category": "Precious Metals",
+      "sources": [
+        {
+          "title": "BIS Official Process Guide - How can an MSME or Startup get discount on BIS certification fees?",
+          "url": "https://www.manakonline.in/MANAK/ApplicationLicenceRelatedrpt",
+          "excerpt": "Under the Micro, Small and Medium Enterprises (MSME) incentive policy of BIS: 1) Micro enterprises get a 80% concession on marking fees. 2) Small enterprises ge..."
+        },
+        {
+          "title": "BIS Official Process Guide - How to verify if a gold jewellery hallmark HUID is genuine?",
+          "url": "https://www.bis.gov.in/hallmarking-overview/",
+          "excerpt": "Consumers can instantly verify gold hallmark purity using the official BIS Care mobile app or online portal: 1) Locate the 6-digit alphanumeric HUID (e.g. AB123..."
+        },
+        {
+          "title": "BIS Official Process Guide - How can foreign manufacturers export certified goods to India (FMCS)?",
+          "url": "https://www.bis.gov.in/fmcs/",
+          "excerpt": "Foreign manufacturers must apply under the Foreign Manufacturers Certification Scheme (FMCS): 1) Appoint an Authorized Indian Representative (AIR) residing in I..."
+        }
+      ],
+      "timestamp": "2026-09-01T19:24:13.765Z"
+    },
+    {
+      "id": 3,
+      "question": "hello hello",
+      "answer": "I couldn't find an exact match in the current BIS records for your specific question. However, BIS manages over 21,890+ Indian Standards across 17 departments. You can check your product status on the official website or search for standard codes directly.",
+      "category": "All",
+      "sources": [
+        {
+          "title": "Bureau of Indian Standards Official Portal",
+          "url": "https://www.bis.gov.in",
+          "excerpt": "Search 21,890+ Indian Standards and official notifications."
+        }
+      ],
+      "timestamp": "2026-09-01T19:21:57.620Z"
+    },
+    {
+      "id": 2,
+      "question": "Is packaged drinking water mandatory for BIS?",
+      "answer": "📌 **IS 14543:2016: Packaged Drinking Water (Other than Packaged Natural Mineral Water) Specification**\n\n• **Category:** Food & Beverages\n• **Certification Scheme:** Scheme-I (ISI Mark)\n• **Mandatory Status:** 🚨 Mandatory (Quality Control Order in Effect)\n\n**Description:**\nCovers physical, chemical, microbiological, radiological, and toxicological parameters for packaged drinking water filled in sealed containers.\n\n**How to Get License (Step-by-Step):**\n1. Ensure plant infrastructure has RO, UV sterilization, ozonation & clean filling line\n2. Setup fully equipped micro-biology and chemical testing lab at plant\n3. Apply online via Manakonline portal under IS 14543\n4. BIS audit of plant hygiene, water source report & manufacturing machinery\n5. Draw water samples for 30-day comprehensive chemical & microbiological testing\n6. License granted upon satisfactory lab test reports\n\n**Fees Structure:**\nApplication fee: ₹1,000 | Marking fee: ₹87 per 1,000 litres packaged water | Renewal: Annual",
+      "category": "All",
+      "sources": [
+        {
+          "title": "IS 14543:2016 - Packaged Drinking Water (Other than Packaged Natural Mineral Water) Specification",
+          "url": "https://www.bis.gov.in/index.php/standards/technical-departments/food-and-agriculture-department/",
+          "excerpt": "Covers physical, chemical, microbiological, radiological, and toxicological parameters for packaged drinking water filled in sealed containers...."
+        },
+        {
+          "title": "BIS Compulsory Certification List: Packaged Drinking Water (IS 14543:2016)",
+          "url": "https://www.bis.gov.in/product-certification/products-under-compulsory-certification/",
+          "excerpt": "Mandatory certification under FSSAI & BIS regulations. Requires in-house microbiology & chemical laboratory."
+        },
+        {
+          "title": "IS 10500:2012 - Drinking Water Specification",
+          "url": "https://www.bis.gov.in/index.php/standards/",
+          "excerpt": "Defines acceptable and permissible limits for 60+ parameters including pH, total dissolved solids (TDS), turbidity, heavy metals (Lead, Arsenic), nitrates, and ..."
+        }
+      ],
+      "timestamp": "2026-09-01T19:21:31.205Z"
+    },
+    {
+      "id": 1,
+      "question": "How do I get ISI mark for a helmet?",
+      "answer": "🔍 **Product Compliance Status: Helmet for Two-Wheelers**\n\n• **Is BIS Certification Mandatory?** YES 🚨 (Compulsory by Law)\n• **Applicable Standard:** IS 4151:2015\n• **Scheme:** Scheme-I (ISI Mark)\n• **Regulating Ministry:** Ministry of Road Transport and Highways (MoRTH)\n\n**Summary:**\nMandatory Quality Control Order in effect since June 1, 2021. Selling non-ISI helmets is punishable by law.",
+      "category": "All",
+      "sources": [
+        {
+          "title": "BIS Compulsory Certification List: Helmet for Two-Wheelers (IS 4151:2015)",
+          "url": "https://www.bis.gov.in/product-certification/products-under-compulsory-certification/",
+          "excerpt": "Mandatory Quality Control Order in effect since June 1, 2021. Selling non-ISI helmets is punishable by law."
+        },
+        {
+          "title": "IS 4151:2015 - Protective Helmets for Two-Wheeler Motorcyclists Specification",
+          "url": "https://www.bis.gov.in/product-certification/products-under-compulsory-certification/",
+          "excerpt": "Specifies materials, performance, impact absorption, chin strap strength, and peripheral vision requirements for helmets used by two-wheeler riders in India...."
+        },
+        {
+          "title": "BIS Official Process Guide - What is the difference between ISI Mark (Scheme-I) and CRS (Scheme-II)?",
+          "url": "https://www.bis.gov.in/product-certification/product-certification-schemes/",
+          "excerpt": "The ISI Mark (Scheme-I) applies to physical products like helmets, packaged water, steel, pressure cookers, and cement. It requires a mandatory physical factory..."
+        }
+      ],
+      "timestamp": "2026-09-01T19:21:24.518Z"
+    }
+  ],
+  "compliance_checks": [
+    {
+      "id": 5,
+      "product_query": "Food PAckage",
+      "is_mandatory": true,
+      "is_code": "IS 14543:2016",
+      "timestamp": "2026-09-02T17:13:12.984Z"
+    },
+    {
+      "id": 4,
+      "product_query": "Helmet",
+      "is_mandatory": true,
+      "is_code": "IS 4151:2015",
+      "timestamp": "2026-09-02T16:50:03.606Z"
+    },
+    {
+      "id": 3,
+      "product_query": "Helmet",
+      "is_mandatory": true,
+      "is_code": "IS 4151:2015",
+      "timestamp": "2026-09-01T19:28:23.349Z"
+    },
+    {
+      "id": 2,
+      "product_query": "helmet",
+      "is_mandatory": true,
+      "is_code": "IS 4151:2015",
+      "timestamp": "2026-09-01T19:19:09.466Z"
+    },
+    {
+      "id": 1,
+      "product_query": "helmet",
+      "is_mandatory": true,
+      "is_code": "IS 4151:2015",
+      "timestamp": "2026-09-01T19:19:09.463Z"
+    }
+  ]
+}

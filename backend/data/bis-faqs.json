@@ -1,0 +1,32 @@
+[
+  {
+    "question": "What is the difference between ISI Mark (Scheme-I) and CRS (Scheme-II)?",
+    "answer": "The ISI Mark (Scheme-I) applies to physical products like helmets, packaged water, steel, pressure cookers, and cement. It requires a mandatory physical factory inspection by BIS officers and in-house testing facilities before a license is granted. CRS (Compulsory Registration Scheme / Scheme-II) primarily covers electronic and IT products (LED bulbs, laptops, chargers, solar inverters). Under CRS, no factory inspection is required prior to registration; manufacturers test products at a BIS-recognized NABL lab and register online to receive a unique R-Number.",
+    "source_url": "https://www.bis.gov.in/product-certification/product-certification-schemes/",
+    "keywords": ["difference", "isi vs crs", "scheme 1 vs scheme 2", "r-number", "isi mark"]
+  },
+  {
+    "question": "How can an MSME or Startup get discount on BIS certification fees?",
+    "answer": "Under the Micro, Small and Medium Enterprises (MSME) incentive policy of BIS: 1) Micro enterprises get a 80% concession on marking fees. 2) Small enterprises get a 50% concession on marking fees. 3) Startups registered under DPIIT get 50% concession on marking fees. Additionally, women entrepreneurs and micro-enterprises operating in North-Eastern regions receive special fee waivers. To claim concessions, upload your Udyam Registration Certificate or DPIIT Recognition Certificate during application on Manakonline.",
+    "source_url": "https://www.manakonline.in/MANAK/ApplicationLicenceRelatedrpt",
+    "keywords": ["msme discount", "startup incentive", "fee waiver", "udyam certificate", "concession", "cost"]
+  },
+  {
+    "question": "What happens if a company sells a product under mandatory QCO without an ISI mark?",
+    "answer": "Manufacturing, importing, stocking, or selling products covered under mandatory Quality Control Orders (QCO) without a valid BIS license or ISI mark is a serious criminal offense under Section 29 of the BIS Act, 2016. Penalties include: 1) Imprisonment up to 2 years. 2) Fine of minimum ₹2 Lakhs up to 10 times the value of non-compliant goods seized. 3) Seizure and destruction of non-compliant stock from market outlets.",
+    "source_url": "https://www.bis.gov.in/enforcement-and-surveillance/",
+    "keywords": ["penalty", "fine", "qco violation", "illegal", "bis act 2016", "punishment", "seizure"]
+  },
+  {
+    "question": "How to verify if a gold jewellery hallmark HUID is genuine?",
+    "answer": "Consumers can instantly verify gold hallmark purity using the official BIS Care mobile app or online portal: 1) Locate the 6-digit alphanumeric HUID (e.g. AB1234) laser-etched on your gold jewellery. 2) Open the BIS Care App and tap 'Verify HUID'. 3) Enter the 6-digit code. 4) The app will display the registered jeweller name, hallmarking center name, date of hallmarking, article type, and purity grade (e.g., 22K916 or 18K750). If details do not match, file a complaint on the app.",
+    "source_url": "https://www.bis.gov.in/hallmarking-overview/",
+    "keywords": ["verify huid", "check gold", "hallmark verification", "bis care app", "gold purity", "fake gold"]
+  },
+  {
+    "question": "How can foreign manufacturers export certified goods to India (FMCS)?",
+    "answer": "Foreign manufacturers must apply under the Foreign Manufacturers Certification Scheme (FMCS): 1) Appoint an Authorized Indian Representative (AIR) residing in India to act as liaison. 2) Submit application on Manakonline with plant layout, factory location, and test setup. 3) BIS officers travel abroad to physically audit the foreign factory. 4) Product samples collected during audit are sent to India for testing in BIS labs. 5) License granted upon satisfactory audit and test results (~6 months process).",
+    "source_url": "https://www.bis.gov.in/fmcs/",
+    "keywords": ["fmcs", "foreign manufacturer", "import to india", "air representative", "export india"]
+  }
+]

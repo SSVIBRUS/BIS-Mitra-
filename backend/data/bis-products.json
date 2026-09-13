@@ -1,0 +1,92 @@
+[
+  {
+    "product_name": "Helmet for Two-Wheelers",
+    "aliases": ["bike helmet", "motorcycle helmet", "headgear", "helmet"],
+    "is_certified_mandatory": true,
+    "scheme": "Scheme-I (ISI Mark)",
+    "is_code": "IS 4151:2015",
+    "ministry": "Ministry of Road Transport and Highways (MoRTH)",
+    "summary": "Mandatory Quality Control Order in effect since June 1, 2021. Selling non-ISI helmets is punishable by law.",
+    "official_link": "https://www.bis.gov.in/product-certification/products-under-compulsory-certification/"
+  },
+  {
+    "product_name": "Packaged Drinking Water",
+    "aliases": ["bottled water", "packaged water", "mineral water", "ro water bottle"],
+    "is_certified_mandatory": true,
+    "scheme": "Scheme-I (ISI Mark)",
+    "is_code": "IS 14543:2016",
+    "ministry": "Ministry of Consumer Affairs, Food & Public Distribution",
+    "summary": "Mandatory certification under FSSAI & BIS regulations. Requires in-house microbiology & chemical laboratory.",
+    "official_link": "https://www.bis.gov.in/product-certification/products-under-compulsory-certification/"
+  },
+  {
+    "product_name": "Domestic Pressure Cooker",
+    "aliases": ["cooker", "pressure cooker", "kitchen cooker", "aluminum cooker"],
+    "is_certified_mandatory": true,
+    "scheme": "Scheme-I (ISI Mark)",
+    "is_code": "IS 2347:2017",
+    "ministry": "Department for Promotion of Industry and Internal Trade (DPIIT)",
+    "summary": "Mandatory Quality Control Order. Non-ISI pressure cookers cannot be manufactured, imported, or sold in India.",
+    "official_link": "https://www.bis.gov.in/product-certification/products-under-compulsory-certification/"
+  },
+  {
+    "product_name": "Children Toys",
+    "aliases": ["toys", "toy", "plastic toy", "electric toy", "baby toy", "action figure"],
+    "is_certified_mandatory": true,
+    "scheme": "Scheme-I (ISI Mark)",
+    "is_code": "IS 9873 (Part 1):2019",
+    "ministry": "DPIIT Toys (Quality Control) Order",
+    "summary": "Mandatory ISI mark for all electric and non-electric toys manufactured or imported into India.",
+    "official_link": "https://www.bis.gov.in/product-certification/products-under-compulsory-certification/"
+  },
+  {
+    "product_name": "LED Bulb / LED Lamp",
+    "aliases": ["led bulb", "led lamp", "tube light", "led light"],
+    "is_certified_mandatory": true,
+    "scheme": "Scheme-II (Compulsory Registration Scheme - CRS)",
+    "is_code": "IS 16102 (Part 1):2012",
+    "ministry": "Ministry of Electronics and Information Technology (MeitY)",
+    "summary": "Mandatory registration under CRS. Product requires testing at NABL lab and registration number (R-xxxxxxx).",
+    "official_link": "https://www.crsbis.in/BIS/"
+  },
+  {
+    "product_name": "Gold Jewellery",
+    "aliases": ["gold", "gold ring", "gold necklace", "gold ornament", "jewellery"],
+    "is_certified_mandatory": true,
+    "scheme": "Hallmarking Scheme (HUID)",
+    "is_code": "IS 15820:2009",
+    "ministry": "Department of Consumer Affairs",
+    "summary": "Mandatory 6-digit Hallmark Unique ID (HUID) laser-etched hallmarking for gold sold by registered jewellers.",
+    "official_link": "https://www.bis.gov.in/hallmarking-overview/"
+  },
+  {
+    "product_name": "TMT Steel Bars",
+    "aliases": ["tmt bar", "steel rebar", "construction steel", "steel rod"],
+    "is_certified_mandatory": true,
+    "scheme": "Scheme-I (ISI Mark)",
+    "is_code": "IS 1786:2008",
+    "ministry": "Ministry of Steel",
+    "summary": "Mandatory QCO for all high strength deformed steel bars used in building construction.",
+    "official_link": "https://www.bis.gov.in/product-certification/products-under-compulsory-certification/"
+  },
+  {
+    "product_name": "Ordinary Portland Cement",
+    "aliases": ["cement", "opc cement", "building cement", "concrete cement"],
+    "is_certified_mandatory": true,
+    "scheme": "Scheme-I (ISI Mark)",
+    "is_code": "IS 269:2015",
+    "ministry": "DPIIT Cement QCO",
+    "summary": "Mandatory ISI mark compliance for manufacturing and distributing 33, 43, and 53 grade cement.",
+    "official_link": "https://www.bis.gov.in/product-certification/products-under-compulsory-certification/"
+  },
+  {
+    "product_name": "Laptop and Mobile Phone Chargers",
+    "aliases": ["charger", "mobile charger", "laptop adapter", "power bank", "mobile phone"],
+    "is_certified_mandatory": true,
+    "scheme": "Scheme-II (CRS)",
+    "is_code": "IS 13252 (Part 1):2010",
+    "ministry": "MeitY CRS Notification",
+    "summary": "Mandatory CRS registration with BIS R-Number printed on packaging.",
+    "official_link": "https://www.crsbis.in/BIS/"
+  }
+]

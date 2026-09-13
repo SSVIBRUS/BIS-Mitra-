@@ -1,0 +1,204 @@
+[
+  {
+    "id": "IS-4151-2015",
+    "is_code": "IS 4151:2015",
+    "title": "Protective Helmets for Two-Wheeler Motorcyclists Specification",
+    "category": "Safety & Automotive",
+    "mandatory_qco": true,
+    "qco_details": "Mandatory Quality Control Order in effect since June 1, 2021. Selling non-ISI helmets is illegal and subject to seizure.",
+    "description": "Specifies materials, performance, impact absorption, chin strap strength, and peripheral vision requirements for helmets used by two-wheeler riders in India.",
+    "certification_scheme": "Scheme-I (ISI Mark)",
+    "application_steps": [
+      "1. Register manufacturing unit on Manakonline portal (manakonline.in)",
+      "2. Select IS 4151:2015 and pay initial application fee of ₹1,000",
+      "3. Set up in-house testing facility for impact absorption & penetration resistance",
+      "4. Submit factory layout, machinery details, and QC personnel certificates",
+      "5. BIS official carries out physical factory inspection & draws samples",
+      "6. Samples tested at BIS recognized laboratory",
+      "7. Grant of license upon passing test reports (~30-45 days)"
+    ],
+    "fees_structure": "Application fee: ₹1,000 | Inspection fee: ₹7,000/day | Marking fee: ₹15 to ₹25 per 1,000 units | License renewal: ₹1,000 annual",
+    "official_url": "https://www.bis.gov.in/product-certification/products-under-compulsory-certification/",
+    "keywords": ["helmet", "two wheeler", "bike helmet", "head protection", "isi helmet", "motorcycle", "IS 4151"]
+  },
+  {
+    "id": "IS-14543-2016",
+    "is_code": "IS 14543:2016",
+    "title": "Packaged Drinking Water (Other than Packaged Natural Mineral Water) Specification",
+    "category": "Food & Beverages",
+    "mandatory_qco": true,
+    "qco_details": "Mandatory under FSSAI & BIS Quality Control Regulations. Non-compliant units are subject to immediate closure.",
+    "description": "Covers physical, chemical, microbiological, radiological, and toxicological parameters for packaged drinking water filled in sealed containers.",
+    "certification_scheme": "Scheme-I (ISI Mark)",
+    "application_steps": [
+      "1. Ensure plant infrastructure has RO, UV sterilization, ozonation & clean filling line",
+      "2. Setup fully equipped micro-biology and chemical testing lab at plant",
+      "3. Apply online via Manakonline portal under IS 14543",
+      "4. BIS audit of plant hygiene, water source report & manufacturing machinery",
+      "5. Draw water samples for 30-day comprehensive chemical & microbiological testing",
+      "6. License granted upon satisfactory lab test reports"
+    ],
+    "fees_structure": "Application fee: ₹1,000 | Marking fee: ₹87 per 1,000 litres packaged water | Renewal: Annual",
+    "official_url": "https://www.bis.gov.in/index.php/standards/technical-departments/food-and-agriculture-department/",
+    "keywords": ["water", "packaged drinking water", "mineral water", "bottled water", "ro water", "IS 14543", "food safety"]
+  },
+  {
+    "id": "IS-10500-2012",
+    "is_code": "IS 10500:2012",
+    "title": "Drinking Water Specification",
+    "category": "Food & Beverages",
+    "mandatory_qco": false,
+    "qco_details": "Benchmark standard used by municipal bodies, water purifiers, and packaged water plants across India.",
+    "description": "Defines acceptable and permissible limits for 60+ parameters including pH, total dissolved solids (TDS), turbidity, heavy metals (Lead, Arsenic), nitrates, and coliform bacteria.",
+    "certification_scheme": "Scheme-I (ISI Mark)",
+    "application_steps": [
+      "1. Apply via Manakonline for voluntary or municipal conformity certification",
+      "2. Submit lab test reports for all 60 parameters",
+      "3. BIS verification of water treatment process"
+    ],
+    "fees_structure": "Standard application & marking fee based on production capacity",
+    "official_url": "https://www.bis.gov.in/index.php/standards/",
+    "keywords": ["drinking water", "tap water", "water quality", "tds limit", "ph limit", "IS 10500", "potable water"]
+  },
+  {
+    "id": "IS-2347-2017",
+    "is_code": "IS 2347:2017",
+    "title": "Domestic Pressure Cookers - Specification",
+    "category": "Consumer Goods & Kitchenware",
+    "mandatory_qco": true,
+    "qco_details": "Mandatory QCO issued by DPIIT. It is illegal to manufacture, import, or sell non-ISI pressure cookers in India.",
+    "description": "Specifies design, bursting pressure, thermal efficiency, safety valves, operating pressure, and material specifications (Aluminum / Stainless Steel) for domestic pressure cookers.",
+    "certification_scheme": "Scheme-I (ISI Mark)",
+    "application_steps": [
+      "1. Ensure in-house pressure testing rig and safety valve calibration tools",
+      "2. File application on Manakonline under IS 2347:2017",
+      "3. Factory inspection by BIS scientific officer",
+      "4. Hydrostatic pressure testing of cooker bodies and rubber gaskets",
+      "5. Grant of CML (Certificate of Manufacturing License)"
+    ],
+    "fees_structure": "Application fee: ₹1,000 | Marking fee: ₹5 per unit | Inspection fee: Standard daily rate",
+    "official_url": "https://www.bis.gov.in/product-certification/products-under-compulsory-certification/",
+    "keywords": ["pressure cooker", "cooker", "kitchenware", "safety valve", "aluminum cooker", "stainless steel cooker", "IS 2347"]
+  },
+  {
+    "id": "IS-9873-PART1-2019",
+    "is_code": "IS 9873 (Part 1):2019",
+    "title": "Safety of Toys - Safety Aspects Related to Mechanical and Physical Properties",
+    "category": "Consumer Goods & Toys",
+    "mandatory_qco": true,
+    "qco_details": "Toys Quality Control Order makes ISI marking compulsory for all electric and non-electric toys manufactured or imported into India.",
+    "description": "Covers safety parameters preventing sharp edges, small parts (choking hazard), toxic paint, flammable materials, and heavy metals in children's toys.",
+    "certification_scheme": "Scheme-I (ISI Mark)",
+    "application_steps": [
+      "1. Identify toy category (electric or non-electric)",
+      "2. Set up safety testing equipment (drop test, pull test, sharp edge tester)",
+      "3. Submit application on Manakonline portal",
+      "4. BIS inspection of manufacturing process & paint source certification",
+      "5. Chemical toxicity testing at BIS-recognized laboratory",
+      "6. Grant of ISI mark license"
+    ],
+    "fees_structure": "Application fee: ₹1,000 | Concessional marking fee for MSMEs (50% discount available)",
+    "official_url": "https://www.bis.gov.in/product-certification/products-under-compulsory-certification/",
+    "keywords": ["toys", "children toys", "toy safety", "plastic toys", "electric toys", "IS 9873", "choking hazard"]
+  },
+  {
+    "id": "IS-16102-PART1-2012",
+    "is_code": "IS 16102 (Part 1):2012",
+    "title": "Self-Ballasted LED Lamps for General Lighting Services - Safety Requirements",
+    "category": "Electronics & Lighting",
+    "mandatory_qco": true,
+    "qco_details": "Mandatory under Compulsory Registration Scheme (CRS) administered by MeitY and BIS.",
+    "description": "Covers insulation resistance, electric shock protection, heat resistance, ingress protection, and fire resistance for LED bulbs used in homes and offices.",
+    "certification_scheme": "Scheme-II (Compulsory Registration Scheme - CRS)",
+    "application_steps": [
+      "1. Get product tested in a BIS-recognized NABL laboratory",
+      "2. Obtain valid Test Report (valid for 90 days)",
+      "3. Register account on CRS portal (crsbis.in)",
+      "4. Upload test report, brand authorization letter, and factory details",
+      "5. BIS issues Registration Number (R-xxxxxxx)",
+      "6. Print Standard Mark with R-Number on LED lamp packaging"
+    ],
+    "fees_structure": "Registration fee: ₹53,000 for main model + inclusion fee for series models",
+    "official_url": "https://www.crsbis.in/BIS/",
+    "keywords": ["led bulb", "led lamp", "lighting", "crs", "r-number", "IS 16102", "electronics"]
+  },
+  {
+    "id": "IS-13252-PART1-2010",
+    "is_code": "IS 13252 (Part 1):2010",
+    "title": "Information Technology Equipment - Safety - General Requirements",
+    "category": "Electronics & IT",
+    "mandatory_qco": true,
+    "qco_details": "Mandatory under MeitY CRS scheme for laptops, mobile phones, power adapters, printers, and monitors.",
+    "description": "Ensures electrical, thermal, energy, and mechanical safety for IT products to prevent electric shocks, battery fires, and user injuries.",
+    "certification_scheme": "Scheme-II (CRS)",
+    "application_steps": [
+      "1. Test IT equipment sample at BIS-approved lab",
+      "2. Submit CRS application on crsbis.in portal",
+      "3. Foreign manufacturers must nominate an Authorized Indian Representative (AIR)",
+      "4. Automatic verification of lab test report by BIS portal",
+      "5. Instant grant of CRS Registration Number"
+    ],
+    "fees_structure": "Application fee: ₹53,000 per model family | Renewal every 2 years",
+    "official_url": "https://www.crsbis.in/BIS/",
+    "keywords": ["laptop", "mobile phone", "charger", "adapter", "power bank", "it equipment", "IS 13252", "crs"]
+  },
+  {
+    "id": "IS-15820-2009",
+    "is_code": "IS 15820:2009",
+    "title": "General Requirements for Establishment and Operation of Assaying and Hallmarking Centres",
+    "category": "Precious Metals & Hallmarking",
+    "mandatory_qco": true,
+    "qco_details": "Mandatory Hallmarking of Gold Jewellery and Artefacts Order in 350+ districts across India.",
+    "description": "Governs registration of jewellers and authorization of Assaying & Hallmarking (A&HC) centres to apply 6-digit HUID (Hallmark Unique ID) on gold items (14K, 18K, 20K, 22K, 23K, 24K).",
+    "certification_scheme": "Hallmarking Registration Scheme",
+    "application_steps": [
+      "1. Jeweller registers on Manakonline portal (manakonline.in)",
+      "2. Upload GST certificate, PAN, and business address proof",
+      "3. Registration is instantly granted online with lifetime validity and zero fee",
+      "4. Send gold jewellery to BIS recognized A&HC centre for XRF testing & HUID laser etching"
+    ],
+    "fees_structure": "Jeweller Registration: FREE (Zero fee) | Hallmarking charge: ₹45 per gold article + GST",
+    "official_url": "https://www.bis.gov.in/hallmarking-overview/",
+    "keywords": ["gold", "hallmark", "huid", "jewellery", "gold purity", "22k", "18k", "IS 15820"]
+  },
+  {
+    "id": "IS-1786-2008",
+    "is_code": "IS 1786:2008",
+    "title": "High Strength Deformed Steel Bars and Wires for Concrete Reinforcement (TMT Bars)",
+    "category": "Steel & Construction",
+    "mandatory_qco": true,
+    "qco_details": "Mandatory Quality Control Order by Ministry of Steel. Selling uncertified TMT bars is a criminal offense.",
+    "description": "Specifies chemical composition, yield stress, tensile strength, elongation, and bend test requirements for Fe 415, Fe 500, Fe 550, and Fe 600 grade TMT steel bars used in building construction.",
+    "certification_scheme": "Scheme-I (ISI Mark)",
+    "application_steps": [
+      "1. Setup steel testing equipment (Universal Testing Machine, spectrometer)",
+      "2. File application on Manakonline",
+      "3. Factory audit by BIS scientific inspection team",
+      "4. Mechanical & chemical testing of steel billets and rolled TMT bars",
+      "5. Grant of CML license"
+    ],
+    "fees_structure": "Application fee: ₹1,000 | Marking fee based on metric tonnage produced",
+    "official_url": "https://www.bis.gov.in/product-certification/products-under-compulsory-certification/",
+    "keywords": ["steel", "tmt bar", "construction", "fe 500", "rebar", "building steel", "IS 1786"]
+  },
+  {
+    "id": "IS-269-2015",
+    "is_code": "IS 269:2015",
+    "title": "Ordinary Portland Cement - Specification",
+    "category": "Cement & Building Materials",
+    "mandatory_qco": true,
+    "qco_details": "Mandatory certification under Cement Quality Control Order.",
+    "description": "Covers physical and chemical requirements for 33 grade, 43 grade, and 53 grade Ordinary Portland Cement (OPC) including compressive strength, setting time, and soundness.",
+    "certification_scheme": "Scheme-I (ISI Mark)",
+    "application_steps": [
+      "1. Maintain in-house chemical & physical testing lab",
+      "2. Apply via Manakonline",
+      "3. BIS physical factory inspection & sample collection",
+      "4. 28-day compressive strength lab test",
+      "5. Issue of ISI License"
+    ],
+    "fees_structure": "Application fee: ₹1,000 | Marking fee: Per metric tonne produced",
+    "official_url": "https://www.bis.gov.in/product-certification/products-under-compulsory-certification/",
+    "keywords": ["cement", "opc cement", "53 grade cement", "building material", "concrete", "IS 269"]
+  }
+]
