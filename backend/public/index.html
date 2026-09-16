@@ -1,68 +1,69 @@
 <!doctype html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>BIS Mitra | Official AI Assistant for Indian Standards & BIS Services</title>
-    <meta name="description" content="AI-Powered Assistant for Indian Standards (BIS) and Certification Services for Industries, MSMEs, and Consumers." />
-    <link rel="icon" type="image/jpeg" href="/assets/logo-Dh-8LUX4.jpg" />
-    <link rel="manifest" href="/assets/manifest-CsYptSDi.json" />
-    <meta name="theme-color" content="#10b981" />
-    <meta name="mobile-web-app-capable" content="yes" />
-    <meta name="apple-mobile-web-app-capable" content="yes" />
-    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
-    <meta name="apple-mobile-web-app-title" content="BIS Mitra" />
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@400;500;600;700;800&display=swap" rel="stylesheet">
-    <script src="/tailwind.min.js"></script>
-    <script>
-      tailwind.config = {
-        darkMode: 'class',
-        theme: {
-          extend: {
-            fontFamily: {
-              sans: ['Outfit', '-apple-system', 'BlinkMacSystemFont', 'sans-serif'],
-            }
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>BIS Mitra | Official AI Assistant for Indian Standards & BIS Services</title>
+  <meta name="description"
+    content="AI-Powered Assistant for Indian Standards (BIS) and Certification Services for Industries, MSMEs, and Consumers." />
+  <link rel="icon" type="image/jpeg" href="/assets/logo-Dh-8LUX4.jpg" />
+  <link rel="manifest" href="/assets/manifest-CsYptSDi.json" />
+  <meta name="theme-color" content="#10b981" />
+  <meta name="mobile-web-app-capable" content="yes" />
+  <meta name="apple-mobile-web-app-capable" content="yes" />
+  <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
+  <meta name="apple-mobile-web-app-title" content="BIS Mitra" />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <script src="/tailwind.min.js"></script>
+  <script>
+    tailwind.config = {
+      darkMode: 'class',
+      theme: {
+        extend: {
+          fontFamily: {
+            sans: ['Outfit', '-apple-system', 'BlinkMacSystemFont', 'sans-serif'],
           }
         }
       }
-    </script>
-    <style>
-      body {
-        font-family: 'Outfit', -apple-system, BlinkMacSystemFont, sans-serif;
-      }
-      ::-webkit-scrollbar {
-        width: 8px;
-      }
-      ::-webkit-scrollbar-track {
-        background: #F1F5F9;
-      }
-      ::-webkit-scrollbar-thumb {
-        background: #94A3B8;
-        border-radius: 4px;
-      }
-      ::-webkit-scrollbar-thumb:hover {
-        background: #64748B;
-      }
-    </style>
-    <script type="module" crossorigin src="/assets/index-Dzn8Vst2.js"></script>
-  </head>
-  <body class="bg-slate-100 text-slate-900 min-h-screen">
-    <div id="root">
-      <div style="min-height: 100vh; display: flex; flex-direction: column; align-items: center; justify-content: center; font-family: Outfit, sans-serif; padding: 2rem; text-align: center; background-color: #f1f5f9;">
-        <div style="font-size: 3rem; margin-bottom: 1rem;">🇮🇳</div>
-        <h2 style="font-size: 1.5rem; font-weight: 800; color: #0f172a; margin-bottom: 0.5rem;">BIS Mitra AI Assistant</h2>
-        <p style="font-size: 0.9rem; color: #64748b; max-width: 440px; margin-bottom: 1.5rem;">Official AI Portal for Indian Standards, Certification & Gold Hallmarking Services.</p>
-        <button onclick="window.location.reload(true)" style="background: #059669; color: white; font-weight: 700; border: none; padding: 0.6rem 1.4rem; border-radius: 0.75rem; cursor: pointer; font-size: 0.85rem; shadow: 0 2px 4px rgba(0,0,0,0.1);">🔄 Refresh App</button>
-      </div>
-    </div>
-    <script>
-      if ('serviceWorker' in navigator) {
-        window.addEventListener('load', () => {
-          navigator.serviceWorker.register('/sw.js').catch(() => {});
-        });
-      }
-    </script>
-  </body>
+    }
+  </script>
+  <style>
+    body {
+      font-family: 'Outfit', -apple-system, BlinkMacSystemFont, sans-serif;
+    }
+
+    ::-webkit-scrollbar {
+      width: 8px;
+    }
+
+    ::-webkit-scrollbar-track {
+      background: #F1F5F9;
+    }
+
+    ::-webkit-scrollbar-thumb {
+      background: #94A3B8;
+      border-radius: 4px;
+    }
+
+    ::-webkit-scrollbar-thumb:hover {
+      background: #64748B;
+    }
+  </style>
+  <script type="module" crossorigin src="/assets/index-DpzLAr_b.js"></script>
+</head>
+
+<body class="bg-slate-100 text-slate-900 min-h-screen">
+  <div id="root"></div>
+  <script>
+    if ('serviceWorker' in navigator) {
+      window.addEventListener('load', () => {
+        navigator.serviceWorker.register('/sw.js').catch(() => { });
+      });
+    }
+  </script>
+</body>
+
 </html>

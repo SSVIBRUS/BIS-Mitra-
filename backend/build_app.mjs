@@ -34,7 +34,8 @@ async function run() {
   );
   fs.writeFileSync(indexPath, indexContent, 'utf8');
 
-  // Clean dist before building
+  // Clean assets and dist before building to prevent filename bloat
+  fs.rmSync('./public/assets', { recursive: true, force: true });
   fs.rmSync('./public/dist', { recursive: true, force: true });
 
   // Build with Vite into dist
@@ -60,7 +61,7 @@ async function run() {
     }
   });
 
-  // Copy built assets & index.html to public
+  // Copy built assets & index.html to public cleanly
   if (fs.existsSync('./public/dist/assets')) {
     fs.cpSync('./public/dist/assets', './public/assets', { recursive: true });
   }
@@ -78,5 +79,4 @@ run().catch(err => {
   console.log("Build script notice: using committed pre-built production bundle:", err.message);
   process.exit(0);
 });
-
 
