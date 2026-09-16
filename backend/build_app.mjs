@@ -9,15 +9,18 @@ async function run() {
   const indexPath = path.resolve('./public/index.html');
   let indexContent = fs.readFileSync(indexPath, 'utf8');
 
-  // Step 1: Ensure index.html points to source /app.jsx before build
-  // (cpSync from a previous build may have overwritten it with a built JS reference)
+  // Ensure index.html points to source /app.jsx before build
   indexContent = indexContent.replace(
     /<script type="module"[^>]*src="\/assets\/[^"]*"[^>]*><\/script>/,
     '<script type="module" src="/app.jsx"></script>'
   );
   fs.writeFileSync(indexPath, indexContent, 'utf8');
 
-  // Step 2: Build with Vite
+  // Clean assets and dist before building
+  fs.rmSync('./public/assets', { recursive: true, force: true });
+  fs.rmSync('./public/dist', { recursive: true, force: true });
+
+  // Build with Vite into dist
   await build({
     configFile: false,
     root: path.resolve('./public'),
@@ -40,8 +43,16 @@ async function run() {
     }
   });
 
-  // Step 3: Copy built assets to public (overwrites index.html with built version — correct for serving)
-  fs.cpSync('./public/dist', './public', { recursive: true });
+  // Copy built assets & index.html to public
+  if (fs.existsSync('./public/dist/assets')) {
+    fs.cpSync('./public/dist/assets', './public/assets', { recursive: true });
+  }
+  if (fs.existsSync('./public/dist/index.html')) {
+    fs.copyFileSync('./public/dist/index.html', './public/index.html');
+  }
+
+  // Clean temporary dist folder
+  fs.rmSync('./public/dist', { recursive: true, force: true });
 
   console.log("VITE BUILD OF BACKEND UI SUCCESSFUL!");
 }
@@ -50,3 +61,4 @@ run().catch(err => {
   console.error("VITE BUILD ERROR:", err);
   process.exit(1);
 });
+
