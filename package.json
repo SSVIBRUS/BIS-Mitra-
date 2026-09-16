@@ -4,7 +4,7 @@
   "description": "BIS AI-Powered Intelligent Assistant - Unified Web Application",
   "main": "backend/server.js",
   "scripts": {
-    "build": "cd backend && node build_app.mjs && node -e \"require('fs').cpSync('public/dist', 'public', { recursive: true })\"",
+    "build": "cd backend && node build_app.mjs",
     "start": "npm run build && node backend/server.js",
     "server": "node backend/server.js"
   }
