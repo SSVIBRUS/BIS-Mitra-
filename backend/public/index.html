@@ -49,7 +49,14 @@
     <script type="module" crossorigin src="/assets/index-Dzn8Vst2.js"></script>
   </head>
   <body class="bg-slate-100 text-slate-900 min-h-screen">
-    <div id="root"></div>
+    <div id="root">
+      <div style="min-height: 100vh; display: flex; flex-direction: column; align-items: center; justify-content: center; font-family: Outfit, sans-serif; padding: 2rem; text-align: center; background-color: #f1f5f9;">
+        <div style="font-size: 3rem; margin-bottom: 1rem;">🇮🇳</div>
+        <h2 style="font-size: 1.5rem; font-weight: 800; color: #0f172a; margin-bottom: 0.5rem;">BIS Mitra AI Assistant</h2>
+        <p style="font-size: 0.9rem; color: #64748b; max-width: 440px; margin-bottom: 1.5rem;">Official AI Portal for Indian Standards, Certification & Gold Hallmarking Services.</p>
+        <button onclick="window.location.reload(true)" style="background: #059669; color: white; font-weight: 700; border: none; padding: 0.6rem 1.4rem; border-radius: 0.75rem; cursor: pointer; font-size: 0.85rem; shadow: 0 2px 4px rgba(0,0,0,0.1);">🔄 Refresh App</button>
+      </div>
+    </div>
     <script>
       if ('serviceWorker' in navigator) {
         window.addEventListener('load', () => {
