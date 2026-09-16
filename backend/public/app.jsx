@@ -2104,6 +2104,7 @@ const BIS_OFFICES = [
 function IndiaMapModal({ isOpen, onClose, darkMode }) {
   const [selected, setSelected] = useState(null);
   const [filter, setFilter] = useState('all');
+  const [mapMode, setMapMode] = useState('default'); // 'default' | 'satellite'
 
   if (!isOpen) return null;
 
@@ -2115,52 +2116,123 @@ function IndiaMapModal({ isOpen, onClose, darkMode }) {
   const typeColors = { office: '#3b82f6', lab: '#06b6d4', hallmark: '#f59e0b' };
 
   return (
-    <div className="fixed inset-0 z-[200] flex items-center justify-center bg-black/70 backdrop-blur-sm p-3">
+    <div className="fixed inset-0 z-[200] flex items-center justify-center bg-black/75 backdrop-blur-sm p-3">
       <div className={`rounded-2xl shadow-2xl w-full max-w-5xl max-h-[92vh] overflow-hidden flex flex-col ${darkMode ? 'bg-slate-900 text-slate-100' : 'bg-white text-slate-900'}`}>
         {/* Header */}
         <div className="flex items-center justify-between p-5 border-b border-slate-700 shrink-0">
           <div>
             <h2 className="text-2xl font-extrabold flex items-center gap-2">🗺️ BIS India — Offices, Labs & Hallmarking Centers</h2>
-            <p className={`text-sm mt-1 ${darkMode ? 'text-slate-400' : 'text-slate-500'}`}>Click any marker to see full contact details</p>
+            <p className={`text-sm mt-1 ${darkMode ? 'text-slate-400' : 'text-slate-500'}`}>Click any marker to view location details & directions</p>
           </div>
-          <button onClick={() => { setSelected(null); onClose(); }} className={`text-2xl leading-none px-2 ${darkMode ? 'text-slate-400 hover:text-white' : 'text-slate-400 hover:text-slate-900'}`}>✕</button>
+          <button onClick={() => { setSelected(null); onClose(); }} className={`text-2xl leading-none px-2 cursor-pointer ${darkMode ? 'text-slate-400 hover:text-white' : 'text-slate-400 hover:text-slate-900'}`}>✕</button>
         </div>
 
         {/* Filter Tabs */}
-        <div className="flex gap-2 px-5 pt-3 shrink-0">
-          {[['all','🏛️ All'], ['office','🔵 Regional Offices'], ['lab','🔵 Testing Labs'], ['hallmark','🟡 Hallmarking']].map(([key, label]) => (
-            <button key={key} onClick={() => { setFilter(key); setSelected(null); }}
-              className={`px-4 py-1.5 rounded-full text-sm font-bold border transition ${filter === key ? 'bg-emerald-600 text-white border-emerald-600' : darkMode ? 'bg-slate-800 border-slate-700 text-slate-300 hover:border-emerald-500' : 'bg-slate-100 border-slate-300 text-slate-700 hover:border-emerald-400'}`}>
-              {label}
+        <div className="flex flex-wrap items-center justify-between gap-2 px-5 pt-3 shrink-0">
+          <div className="flex gap-2">
+            {[ ['all','🏛️ All'], ['office','🔵 Regional Offices'], ['lab','🔵 Testing Labs'], ['hallmark','🟡 Hallmarking'] ].map(([key, label]) => (
+              <button key={key} onClick={() => { setFilter(key); setSelected(null); }}
+                className={`px-4 py-1.5 rounded-full text-sm font-bold border transition cursor-pointer ${filter === key ? 'bg-emerald-600 text-white border-emerald-600' : darkMode ? 'bg-slate-800 border-slate-700 text-slate-300 hover:border-emerald-500' : 'bg-slate-100 border-slate-300 text-slate-700 hover:border-emerald-400'}`}>
+                {label}
+              </button>
+            ))}
+          </div>
+
+          {/* Google Maps Style Layer View Switcher (Default vs Satellite) */}
+          <div className="flex bg-slate-900/90 rounded-xl p-1 border border-slate-700 shadow-md">
+            <button
+              type="button"
+              onClick={() => setMapMode('default')}
+              className={`px-3 py-1.5 rounded-lg text-xs font-bold transition flex items-center gap-1.5 cursor-pointer ${
+                mapMode === 'default'
+                  ? 'bg-blue-600 text-white shadow-md'
+                  : 'text-slate-300 hover:text-white hover:bg-slate-800'
+              }`}
+            >
+              <span>🗺️</span>
+              <span>Default View</span>
             </button>
-          ))}
+            <button
+              type="button"
+              onClick={() => setMapMode('satellite')}
+              className={`px-3 py-1.5 rounded-lg text-xs font-bold transition flex items-center gap-1.5 cursor-pointer ${
+                mapMode === 'satellite'
+                  ? 'bg-emerald-600 text-white shadow-md'
+                  : 'text-slate-300 hover:text-white hover:bg-slate-800'
+              }`}
+            >
+              <span>🛰️</span>
+              <span>Satellite View</span>
+            </button>
+          </div>
         </div>
 
         {/* Map + Info split */}
         <div className="flex flex-1 overflow-hidden min-h-0 m-4 gap-4">
-          {/* SVG Map */}
-          <div className={`relative flex-1 rounded-2xl border overflow-hidden flex items-center justify-center ${darkMode ? 'bg-slate-800 border-slate-700' : 'bg-blue-50 border-slate-200'}`}>
-            <svg viewBox="0 0 100 100" className="w-full h-full max-h-[460px]" style={{ filter: 'drop-shadow(0 2px 8px rgba(0,0,0,0.15))' }}>
+          {/* SVG Map Container */}
+          <div className={`relative flex-1 rounded-2xl border overflow-hidden flex items-center justify-center transition-colors ${
+            mapMode === 'satellite'
+              ? 'bg-[#060e1a] border-emerald-900/50 shadow-inner'
+              : darkMode ? 'bg-slate-800 border-slate-700' : 'bg-blue-50 border-slate-200'
+          }`}>
+            
+            {/* Top Right Map Mode Badge */}
+            <div className="absolute top-3 left-3 z-10 text-[10px] uppercase font-mono tracking-widest px-2.5 py-1 rounded-md border shadow-md font-bold bg-slate-900/80 text-emerald-400 border-emerald-500/40 backdrop-blur-sm">
+              {mapMode === 'satellite' ? '🛰️ SATELLITE TERRAIN MODE' : '🗺️ DEFAULT MAP VECTOR'}
+            </div>
+
+            <svg viewBox="0 0 100 100" className="w-full h-full max-h-[460px]" style={{ filter: mapMode === 'satellite' ? 'drop-shadow(0 4px 12px rgba(0,255,170,0.15))' : 'drop-shadow(0 2px 8px rgba(0,0,0,0.15))' }}>
+              <defs>
+                <linearGradient id="satGradient" x1="0%" y1="0%" x2="100%" y2="100%">
+                  <stop offset="0%" stopColor="#143022" />
+                  <stop offset="50%" stopColor="#1f4430" />
+                  <stop offset="100%" stopColor="#0d2419" />
+                </linearGradient>
+                <pattern id="satGrid" width="10" height="10" patternUnits="userSpaceOnUse">
+                  <path d="M 10 0 L 0 0 0 10" fill="none" stroke="#34d399" strokeWidth="0.08" opacity="0.25" />
+                </pattern>
+              </defs>
+
+              {/* Satellite Grid Overlay */}
+              {mapMode === 'satellite' && (
+                <rect width="100" height="100" fill="url(#satGrid)" />
+              )}
+
               {/* Simplified India outline */}
-              <path d="M25,5 L40,3 L58,5 L72,12 L80,20 L85,30 L82,38 L78,45 L80,55 L75,65 L68,72 L60,80 L50,90 L42,95 L35,88 L28,78 L22,68 L18,58 L15,48 L18,38 L15,28 L20,18 Z" fill={darkMode ? '#1e293b' : '#dbeafe'} stroke={darkMode ? '#475569' : '#93c5fd'} strokeWidth="0.8"/>
+              <path
+                d="M25,5 L40,3 L58,5 L72,12 L80,20 L85,30 L82,38 L78,45 L80,55 L75,65 L68,72 L60,80 L50,90 L42,95 L35,88 L28,78 L22,68 L18,58 L15,48 L18,38 L15,28 L20,18 Z"
+                fill={mapMode === 'satellite' ? 'url(#satGradient)' : darkMode ? '#1e293b' : '#dbeafe'}
+                stroke={mapMode === 'satellite' ? '#34d399' : darkMode ? '#475569' : '#93c5fd'}
+                strokeWidth={mapMode === 'satellite' ? '0.9' : '0.8'}
+              />
               {/* Kashmir region */}
-              <path d="M25,5 L28,2 L35,1 L40,3" fill={darkMode ? '#1e293b' : '#dbeafe'} stroke={darkMode ? '#475569' : '#93c5fd'} strokeWidth="0.5"/>
+              <path
+                d="M25,5 L28,2 L35,1 L40,3"
+                fill={mapMode === 'satellite' ? 'url(#satGradient)' : darkMode ? '#1e293b' : '#dbeafe'}
+                stroke={mapMode === 'satellite' ? '#34d399' : darkMode ? '#475569' : '#93c5fd'}
+                strokeWidth="0.5"
+              />
               {/* Northeast */}
-              <path d="M72,12 L80,8 L85,15 L80,20" fill={darkMode ? '#1e293b' : '#dbeafe'} stroke={darkMode ? '#475569' : '#93c5fd'} strokeWidth="0.5"/>
+              <path
+                d="M72,12 L80,8 L85,15 L80,20"
+                fill={mapMode === 'satellite' ? 'url(#satGradient)' : darkMode ? '#1e293b' : '#dbeafe'}
+                stroke={mapMode === 'satellite' ? '#34d399' : darkMode ? '#475569' : '#93c5fd'}
+                strokeWidth="0.5"
+              />
 
               {/* Markers */}
               {filtered.map(office => (
                 <g key={office.id} onClick={() => setSelected(selected?.id === office.id ? null : office)} style={{ cursor: 'pointer' }}>
                   <circle
-                    cx={office.x} cy={office.y} r={selected?.id === office.id ? 3.5 : 2.5}
-                    fill={office.color}
+                    cx={office.x} cy={office.y} r={selected?.id === office.id ? 3.8 : 2.6}
+                    fill={mapMode === 'satellite' && selected?.id === office.id ? '#38bdf8' : office.color}
                     stroke="white" strokeWidth="0.8"
-                    style={{ transition: 'all 0.2s', filter: selected?.id === office.id ? 'drop-shadow(0 0 4px ' + office.color + ')' : 'none' }}
+                    style={{ transition: 'all 0.2s', filter: mapMode === 'satellite' ? 'drop-shadow(0 0 6px ' + (office.color) + ')' : selected?.id === office.id ? 'drop-shadow(0 0 4px ' + office.color + ')' : 'none' }}
                   />
                   {selected?.id === office.id && (
-                    <circle cx={office.x} cy={office.y} r={5} fill="none" stroke={office.color} strokeWidth="0.5" opacity="0.5" />
+                    <circle cx={office.x} cy={office.y} r={5.5} fill="none" stroke={mapMode === 'satellite' ? '#38bdf8' : office.color} strokeWidth="0.6" opacity="0.8" className="animate-pulse" />
                   )}
-                  <text x={office.x + 3} y={office.y + 1} fontSize="2" fill={darkMode ? '#cbd5e1' : '#374151'} style={{ pointerEvents: 'none', fontWeight: 600 }}>
+                  <text x={office.x + 3.5} y={office.y + 1} fontSize="2" fill={mapMode === 'satellite' ? '#f8fafc' : darkMode ? '#cbd5e1' : '#374151'} style={{ pointerEvents: 'none', fontWeight: 700 }}>
                     {office.city.split(' ')[0]}
                   </text>
                 </g>
@@ -2168,11 +2240,11 @@ function IndiaMapModal({ isOpen, onClose, darkMode }) {
             </svg>
 
             {/* Legend */}
-            <div className={`absolute bottom-3 left-3 rounded-xl p-2 text-xs space-y-1 ${darkMode ? 'bg-slate-900/90' : 'bg-white/90'}`}>
+            <div className={`absolute bottom-3 left-3 rounded-xl p-2 text-xs space-y-1 ${mapMode === 'satellite' ? 'bg-slate-950/90 border border-slate-800 text-slate-200' : darkMode ? 'bg-slate-900/90' : 'bg-white/90'}`}>
               {[['🔵', '#3b82f6', 'Regional Office'], ['🔵', '#06b6d4', 'Testing Lab'], ['🟡', '#f59e0b', 'Hallmarking']].map(([dot, col, label]) => (
                 <div key={label} className="flex items-center gap-1.5">
                   <span style={{ color: col }}>●</span>
-                  <span className={darkMode ? 'text-slate-300' : 'text-slate-600'}>{label}</span>
+                  <span className={mapMode === 'satellite' ? 'text-slate-200 font-medium' : darkMode ? 'text-slate-300' : 'text-slate-600'}>{label}</span>
                 </div>
               ))}
             </div>
@@ -2181,37 +2253,51 @@ function IndiaMapModal({ isOpen, onClose, darkMode }) {
           {/* Info Panel */}
           <div className="w-72 shrink-0 overflow-y-auto space-y-2">
             {selected ? (
-              <div className={`rounded-xl border p-4 h-full ${darkMode ? 'bg-slate-800 border-slate-700' : 'bg-white border-slate-200'}`}>
-                <div className="w-10 h-10 rounded-xl flex items-center justify-center text-xl mb-3" style={{ backgroundColor: selected.color + '22' }}>
-                  {selected.id.startsWith('lab') ? '🔬' : selected.id.startsWith('hc') ? '🏅' : '🏛️'}
-                </div>
-                <h3 className="font-extrabold text-base mb-1">{selected.name}</h3>
-                <p className={`text-sm font-semibold mb-3 ${darkMode ? 'text-emerald-400' : 'text-emerald-600'}`}>📍 {selected.city}</p>
-                <div className="space-y-3 text-sm">
-                  <div>
-                    <p className={`text-xs font-bold uppercase mb-1 ${darkMode ? 'text-slate-400' : 'text-slate-500'}`}>Address</p>
-                    <p className={darkMode ? 'text-slate-300' : 'text-slate-700'}>{selected.address}</p>
+              <div className={`rounded-xl border p-4 h-full flex flex-col justify-between ${darkMode ? 'bg-slate-800 border-slate-700' : 'bg-white border-slate-200'}`}>
+                <div>
+                  <div className="w-10 h-10 rounded-xl flex items-center justify-center text-xl mb-3" style={{ backgroundColor: selected.color + '22' }}>
+                    {selected.id.startsWith('lab') ? '🔬' : selected.id.startsWith('hc') ? '🏅' : '🏛️'}
                   </div>
-                  <div>
-                    <p className={`text-xs font-bold uppercase mb-1 ${darkMode ? 'text-slate-400' : 'text-slate-500'}`}>Phone</p>
-                    <a href={`tel:${selected.phone}`} className="text-emerald-500 font-bold hover:underline">{selected.phone}</a>
-                  </div>
-                  <div>
-                    <p className={`text-xs font-bold uppercase mb-2 ${darkMode ? 'text-slate-400' : 'text-slate-500'}`}>Services</p>
-                    <div className="flex flex-wrap gap-1">
-                      {selected.services.map(s => (
-                        <span key={s} className={`px-2 py-0.5 rounded-full text-xs font-semibold ${darkMode ? 'bg-emerald-900/60 text-emerald-300' : 'bg-emerald-100 text-emerald-800'}`}>{s}</span>
-                      ))}
+                  <h3 className="font-extrabold text-base mb-1">{selected.name}</h3>
+                  <p className={`text-sm font-semibold mb-3 ${darkMode ? 'text-emerald-400' : 'text-emerald-600'}`}>📍 {selected.city}</p>
+                  <div className="space-y-3 text-sm">
+                    <div>
+                      <p className={`text-xs font-bold uppercase mb-1 ${darkMode ? 'text-slate-400' : 'text-slate-500'}`}>Address</p>
+                      <p className={darkMode ? 'text-slate-300' : 'text-slate-700'}>{selected.address}</p>
+                    </div>
+                    <div>
+                      <p className={`text-xs font-bold uppercase mb-1 ${darkMode ? 'text-slate-400' : 'text-slate-500'}`}>Phone</p>
+                      <a href={`tel:${selected.phone}`} className="text-emerald-500 font-bold hover:underline">{selected.phone}</a>
+                    </div>
+                    <div>
+                      <p className={`text-xs font-bold uppercase mb-2 ${darkMode ? 'text-slate-400' : 'text-slate-500'}`}>Services</p>
+                      <div className="flex flex-wrap gap-1">
+                        {selected.services.map(s => (
+                          <span key={s} className={`px-2 py-0.5 rounded-full text-xs font-semibold ${darkMode ? 'bg-emerald-900/60 text-emerald-300' : 'bg-emerald-100 text-emerald-800'}`}>{s}</span>
+                        ))}
+                      </div>
                     </div>
                   </div>
                 </div>
+
+                {/* Google Maps Direct Navigation Button */}
+                <a
+                  href={`https://www.google.com/maps/search/?api=1&query=${encodeURIComponent(selected.name + ' ' + selected.address)}`}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="w-full mt-4 bg-blue-600 hover:bg-blue-700 text-white font-bold py-2.5 px-3 rounded-xl text-xs flex items-center justify-center gap-1.5 transition shadow-sm cursor-pointer shrink-0"
+                >
+                  <span>📍</span>
+                  <span>Open in Google Maps</span>
+                  <span>↗</span>
+                </a>
               </div>
             ) : (
               <div className={`h-full rounded-xl border flex flex-col gap-2 p-3 overflow-y-auto ${darkMode ? 'border-slate-700' : 'border-slate-200'}`}>
-                <p className={`text-sm font-bold px-1 ${darkMode ? 'text-slate-300' : 'text-slate-600'}`}>Showing {filtered.length} locations — click any dot on the map or a card below</p>
+                <p className={`text-sm font-bold px-1 ${darkMode ? 'text-slate-300' : 'text-slate-600'}`}>Showing {filtered.length} locations — click any dot on map or a card</p>
                 {filtered.map(office => (
                   <button key={office.id} onClick={() => setSelected(office)}
-                    className={`text-left rounded-xl p-3 border transition ${darkMode ? 'bg-slate-800 border-slate-700 hover:border-emerald-500' : 'bg-slate-50 border-slate-200 hover:border-emerald-400'}`}>
+                    className={`text-left rounded-xl p-3 border transition cursor-pointer ${darkMode ? 'bg-slate-800 border-slate-700 hover:border-emerald-500' : 'bg-slate-50 border-slate-200 hover:border-emerald-400'}`}>
                     <div className="flex items-center gap-2 mb-1">
                       <span style={{ color: office.color }}>●</span>
                       <span className="font-bold text-sm">{office.city}</span>
