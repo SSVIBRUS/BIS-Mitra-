@@ -3,6 +3,7 @@ import ChatBox from './components/ChatBox';
 import InputBar from './components/InputBar';
 import ComplianceCheck from './components/ComplianceCheck';
 import VisionScanner from './components/VisionScanner';
+import ChatPDFSummaryModal from './components/ChatPDFSummaryModal';
 
 const TRANSLATIONS = {
   en: {
@@ -39,6 +40,8 @@ export default function App() {
   const [category, setCategory] = useState('All');
   const [isCheckModalOpen, setIsCheckModalOpen] = useState(false);
   const [isScanModalOpen, setIsScanModalOpen] = useState(false);
+  const [isChatPDFOpen, setIsChatPDFOpen] = useState(false);
+  const [chatPDFData, setChatPDFData] = useState(null);
 
   useEffect(() => {
     localStorage.setItem('bis_theme', darkMode ? 'dark' : 'light');
@@ -72,7 +75,8 @@ export default function App() {
           {
             type: 'bot',
             text: data.answer,
-            sources: data.sources || []
+            sources: data.sources || [],
+            userQuestion: questionText
           }
         ]);
       } else {
@@ -182,7 +186,14 @@ export default function App() {
           </div>
         </div>
 
-        <ChatBox messages={messages} loading={loading} t={t} darkMode={darkMode} onClear={() => setMessages([])} />
+        <ChatBox
+          messages={messages}
+          loading={loading}
+          t={t}
+          darkMode={darkMode}
+          onClear={() => setMessages([])}
+          onOpenChatPDF={(data) => { setChatPDFData(data); setIsChatPDFOpen(true); }}
+        />
         <InputBar onSend={handleSend} loading={loading} t={t} darkMode={darkMode} />
       </main>
 
@@ -198,6 +209,14 @@ export default function App() {
         onClose={() => setIsScanModalOpen(false)}
         t={t}
         darkMode={darkMode}
+      />
+
+      <ChatPDFSummaryModal
+        isOpen={isChatPDFOpen}
+        onClose={() => { setIsChatPDFOpen(false); setChatPDFData(null); }}
+        data={chatPDFData}
+        darkMode={darkMode}
+        t={t}
       />
 
       <footer className={`py-4 px-4 text-center border-t text-sm mt-8 ${

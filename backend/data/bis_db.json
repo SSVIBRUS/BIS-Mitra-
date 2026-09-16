@@ -1073,6 +1073,20 @@
   ],
   "compliance_checks": [
     {
+      "id": 7,
+      "product_query": "helmet",
+      "is_mandatory": true,
+      "is_code": "IS 4151:2015",
+      "timestamp": "2026-09-13T20:39:52.944Z"
+    },
+    {
+      "id": 6,
+      "product_query": "helmet",
+      "is_mandatory": true,
+      "is_code": "IS 4151:2015",
+      "timestamp": "2026-09-13T20:39:52.938Z"
+    },
+    {
       "id": 5,
       "product_query": "Food PAckage",
       "is_mandatory": true,

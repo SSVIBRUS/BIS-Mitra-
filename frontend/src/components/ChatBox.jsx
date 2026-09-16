@@ -2,7 +2,7 @@ import React, { useEffect, useRef } from 'react';
 import SourceBadge from './SourceBadge';
 import { User, Bot, Loader2 } from './icons';
 
-export default function ChatBox({ messages, loading, onClear }) {
+export default function ChatBox({ messages, loading, onClear, onOpenChatPDF }) {
   const messagesEndRef = useRef(null);
 
   const scrollToBottom = () => {
@@ -78,8 +78,29 @@ export default function ChatBox({ messages, loading, onClear }) {
                     : 'bg-white text-slate-900 border-slate-200 rounded-tl-none shadow-xs'
                 }`}
               >
-                <div className="font-bold text-xs uppercase tracking-wider mb-2 opacity-70">
-                  {msg.type === 'user' ? 'You Asked:' : 'BIS Official Assistant:'}
+                <div className="flex items-center justify-between gap-2 mb-2">
+                  <div className="font-bold text-xs uppercase tracking-wider opacity-70">
+                    {msg.type === 'user' ? 'You Asked:' : 'BIS Official Assistant:'}
+                  </div>
+
+                  {msg.type === 'bot' && (
+                    <button
+                      type="button"
+                      onClick={(e) => {
+                        e.preventDefault();
+                        const prevUserMsg = messages.slice(0, idx).reverse().find(m => m.type === 'user');
+                        const userQ = msg.userQuestion || (prevUserMsg ? prevUserMsg.text : 'User Question');
+                        if (onOpenChatPDF) {
+                          onOpenChatPDF({ question: userQ, answer: msg.text, sources: msg.sources || [] });
+                        }
+                      }}
+                      className="text-xs font-bold px-2 py-1 rounded-lg border transition flex items-center gap-1 cursor-pointer bg-emerald-50 hover:bg-emerald-100 text-emerald-800 border-emerald-300"
+                      title="Generate & Save PDF Summary"
+                    >
+                      <span>📄</span>
+                      <span>PDF Summary</span>
+                    </button>
+                  )}
                 </div>
 
                 {msg.type === 'user' ? (
