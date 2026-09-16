@@ -1655,8 +1655,14 @@ function ChatBox({ messages, loading, t = {}, darkMode, lang, onClear, onOpenCha
       )}
       <div className="flex-1 overflow-y-auto pr-2 space-y-6 relative z-10">
         {(!messages || !Array.isArray(messages) || messages.length === 0) ? (
-          <div className="h-full flex items-center justify-center">
-            <h2 className={`text-3xl sm:text-4xl font-extrabold tracking-tight ${darkMode ? 'text-slate-300' : 'text-slate-600'}`}>{t.welcomeTitle || 'Welcome To BIS Mitra'}</h2>
+          <div className="h-full flex flex-col items-center justify-center text-center p-4">
+            <img
+              src="/logo.jpg"
+              alt="BIS Mitra Logo"
+              className="w-28 h-28 sm:w-36 sm:h-36 rounded-2xl object-cover shadow-lg border-2 border-emerald-500/40 mb-4"
+              style={{ opacity: 0.75 }}
+            />
+            <h2 className={`text-3xl sm:text-4xl font-extrabold tracking-tight ${darkMode ? 'text-slate-200' : 'text-slate-700'}`}>{t.welcomeTitle || 'Welcome To BIS Mitra'}</h2>
           </div>
         ) : (
           messages.map((msg, idx) => (
