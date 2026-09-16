@@ -2063,34 +2063,231 @@ function PDFReportModal({ isOpen, onClose, reportData, darkMode }) {
 }
 
 // ─────────────────────────────────────────────────────────────────
-// FEATURE 2: INTERACTIVE BIS INDIA MAP
+// FEATURE 2: INTERACTIVE BIS INDIA MAP (OpenStreetMap & Real BIS Locations)
 // ─────────────────────────────────────────────────────────────────
-const BIS_OFFICES = [
-  { id: 'nd', name: 'Northern Regional Office', city: 'New Delhi', address: 'Plot No. 4, Institutional Area, Sector 14, Dwarka, New Delhi - 110078', phone: '011-28031200', services: ['ISI Certification', 'CRS Registration', 'Lab Testing', 'FMCS'], states: ['Delhi', 'Haryana', 'Himachal Pradesh', 'Jammu & Kashmir', 'Punjab', 'Rajasthan', 'Uttar Pradesh', 'Uttarakhand'], x: 30, y: 25, color: '#3b82f6' },
-  { id: 'er', name: 'Eastern Regional Office', city: 'Kolkata', address: 'P-7, Institutional Area, Block-GP, Sector V, Salt Lake City, Kolkata - 700091', phone: '033-23590100', services: ['ISI Certification', 'Hallmarking', 'Lab Testing'], states: ['West Bengal', 'Bihar', 'Jharkhand', 'Odisha', 'Assam', 'Northeast States'], x: 73, y: 40, color: '#f59e0b' },
-  { id: 'sr', name: 'Southern Regional Office', city: 'Chennai', address: 'IV Cross Road, CIT Campus, Taramani, Chennai - 600113', phone: '044-22541442', services: ['ISI Certification', 'CRS Registration', 'Lab Testing', 'Hallmarking'], states: ['Tamil Nadu', 'Kerala', 'Karnataka', 'Andhra Pradesh', 'Telangana', 'Puducherry'], x: 38, y: 78, color: '#10b981' },
-  { id: 'wr', name: 'Western Regional Office', city: 'Mumbai', address: 'Manakalaya, E9, MIDC, Marol, Andheri East, Mumbai - 400093', phone: '022-28373321', services: ['ISI Certification', 'CRS Registration', 'Lab Testing'], states: ['Maharashtra', 'Goa', 'Gujarat', 'Madhya Pradesh', 'Chhattisgarh'], x: 22, y: 52, color: '#8b5cf6' },
-  { id: 'cr', name: 'Central Regional Office', city: 'Kolkata', address: 'Nirman Bhavan, Maulana Azad Road, New Delhi - 110001', phone: '011-23061981', services: ['ISI Certification', 'Standards Development', 'QCO Enforcement'], states: ['Madhya Pradesh', 'Chhattisgarh', 'Uttarakhand'], x: 40, y: 38, color: '#ef4444' },
-  { id: 'lab_gzb', name: 'Central Testing Lab — Ghaziabad', city: 'Ghaziabad', address: 'Kamla Nehru Nagar, Ghaziabad, Uttar Pradesh - 201002', phone: '0120-2783347', services: ['Helmet Impact Testing', 'Pressure Cooker Burst Test', 'LED Photometry', 'Chemical Analysis'], states: ['UP Lab'], x: 34, y: 27, color: '#06b6d4' },
-  { id: 'lab_mum', name: 'Testing Lab — Mumbai', city: 'Mumbai', address: 'E-9, MIDC, Marol, Andheri East, Mumbai - 400093', phone: '022-28373311', services: ['Electrical Safety', 'Chemical Testing', 'Toy Safety'], states: ['WR Lab'], x: 19, y: 55, color: '#06b6d4' },
-  { id: 'lab_chn', name: 'Testing Lab — Chennai', city: 'Chennai', address: 'CIT Campus, Taramani, Chennai - 600113', phone: '044-22541400', services: ['Steel Testing', 'Cement Testing', 'Cable Testing'], states: ['SR Lab'], x: 36, y: 81, color: '#06b6d4' },
-  { id: 'hc_del', name: 'Hallmarking Centre — Delhi', city: 'New Delhi', address: 'BIS Regional Office, Dwarka, New Delhi', phone: '011-28031220', services: ['Gold Hallmarking', 'HUID Verification', 'Silver Hallmarking'], states: ['Delhi Hallmarking'], x: 28, y: 26, color: '#f59e0b' },
-  { id: 'hc_mum', name: 'Hallmarking Centre — Mumbai', city: 'Mumbai', address: 'Marol, Andheri East, Mumbai', phone: '022-28373399', services: ['Gold Hallmarking', 'HUID Verification', 'Platinum Hallmarking'], states: ['Mumbai Hallmarking'], x: 17, y: 57, color: '#f59e0b' },
+const MAJOR_CITIES = [
+  { id: 'all', name: '🏛️ All India', lat: 22.5937, lng: 78.9629, zoom: 5 },
+  { id: 'delhi', name: '📍 Delhi NCR', lat: 28.6139, lng: 77.2090, zoom: 11 },
+  { id: 'mumbai', name: '📍 Mumbai', lat: 19.0760, lng: 72.8777, zoom: 11 },
+  { id: 'kolkata', name: '📍 Kolkata', lat: 22.5726, lng: 88.3639, zoom: 11 },
+  { id: 'chennai', name: '📍 Chennai', lat: 13.0827, lng: 80.2707, zoom: 11 },
+  { id: 'bengaluru', name: '📍 Bengaluru', lat: 12.9716, lng: 77.5946, zoom: 11 },
+  { id: 'hyderabad', name: '📍 Hyderabad', lat: 17.3850, lng: 78.4867, zoom: 11 },
+  { id: 'ahmedabad', name: '📍 Ahmedabad & Surat', lat: 23.0225, lng: 72.5714, zoom: 10 },
+  { id: 'jaipur', name: '📍 Jaipur', lat: 26.9124, lng: 75.7873, zoom: 11 },
+  { id: 'thrissur', name: '📍 Thrissur (Kerala)', lat: 10.5276, lng: 76.2144, zoom: 11 },
+  { id: 'guwahati', name: '📍 Guwahati & Patna', lat: 26.1445, lng: 91.7362, zoom: 10 }
+];
+
+const REAL_BIS_LOCATIONS = [
+  // REGIONAL & BRANCH OFFICES
+  { id: 'hq_delhi', type: 'office', cityId: 'delhi', name: 'BIS Headquarters (Manak Bhavan)', city: 'New Delhi', lat: 28.6234, lng: 77.2312, address: '9 Bahadur Shah Zafar Marg, Old Delhi, New Delhi - 110002', phone: '011-23230131', services: ['National Standards Body', 'QCO Policy', 'ISI & CRS Licensing'], color: '#2563eb' },
+  { id: 'nro_dwarka', type: 'office', cityId: 'delhi', name: 'Northern Regional Office (NRO)', city: 'New Delhi', lat: 28.5910, lng: 77.0600, address: 'Plot No. 4, Institutional Area, Sector 14, Dwarka, New Delhi - 110078', phone: '011-28031200', services: ['Northern India Coverage', 'ISI Licensing', 'CRS Registration'], color: '#2563eb' },
+  { id: 'off_mumbai', type: 'office', cityId: 'mumbai', name: 'Western Regional Office (Manakalaya)', city: 'Mumbai', lat: 19.1170, lng: 72.8690, address: 'E9, MIDC, Marol, Andheri East, Mumbai, Maharashtra - 400093', phone: '022-28373321', services: ['Western India Coverage', 'Import Certification', 'Hallmarking Audit'], color: '#2563eb' },
+  { id: 'off_kolkata', type: 'office', cityId: 'kolkata', name: 'Eastern Regional Office (ERO)', city: 'Kolkata', lat: 22.5730, lng: 88.4340, address: 'P-7, Institutional Area, Sector V, Salt Lake City, Kolkata - 700091', phone: '033-23590100', services: ['Eastern India Coverage', 'Steel Certification', 'Jute Standards'], color: '#2563eb' },
+  { id: 'off_chennai', type: 'office', cityId: 'chennai', name: 'Southern Regional Office (SRO)', city: 'Chennai', lat: 12.9860, lng: 80.2460, address: 'IV Cross Road, CIT Campus, Taramani, Chennai - 600113', phone: '044-22541442', services: ['Southern India Coverage', 'Electrical Safety', 'Rubber Standards'], color: '#2563eb' },
+  { id: 'off_bengaluru', type: 'office', cityId: 'bengaluru', name: 'BIS Bengaluru Branch Office', city: 'Bengaluru', lat: 12.9720, lng: 77.5700, address: 'Peenya Industrial Area, 1st Stage, Tumkur Road, Bengaluru - 560058', phone: '080-28395000', services: ['IT & Electronics CRS', 'Solar PV Modules', 'ISI Certification'], color: '#2563eb' },
+  { id: 'off_hyderabad', type: 'office', cityId: 'hyderabad', name: 'BIS Hyderabad Branch Office', city: 'Hyderabad', lat: 17.4000, lng: 78.4700, address: '5-9-58/B, Fateh Maidan Road, Hyderabad, Telangana - 500001', phone: '040-23201462', services: ['Pharma Packaging', 'Electrical Cables', 'Hallmarking Audit'], color: '#2563eb' },
+  { id: 'off_ahmedabad', type: 'office', cityId: 'ahmedabad', name: 'BIS Ahmedabad Branch Office', city: 'Ahmedabad', lat: 23.0295, lng: 72.5800, address: 'Pushpak, 3rd Floor, Relief Road, Khanpur, Ahmedabad - 380001', phone: '079-25601348', services: ['Textiles', 'Chemical Certification', 'ISI Mark'], color: '#2563eb' },
+  { id: 'off_jaipur', type: 'office', cityId: 'jaipur', name: 'BIS Jaipur Branch Office', city: 'Jaipur', lat: 26.9200, lng: 75.8050, address: 'City Centre, Sansar Chandra Road, Jaipur - 302001', phone: '0141-2373801', services: ['Gold Hallmarking', 'Handicraft Standards', 'ISI Mark'], color: '#2563eb' },
+  { id: 'off_guwahati', type: 'office', cityId: 'guwahati', name: 'BIS Guwahati Branch Office', city: 'Guwahati', lat: 26.1550, lng: 91.7650, address: 'Sethi Trust Building, 5th Floor, GS Road, Guwahati - 781005', phone: '0361-2465711', services: ['Northeast Coverage', 'Tea Standards', 'ISI Certification'], color: '#2563eb' },
+  { id: 'off_patna', type: 'office', cityId: 'guwahati', name: 'BIS Patna Branch Office', city: 'Patna', lat: 25.6150, lng: 85.1420, address: '3rd Floor, Biscomaun Tower, West Gandhi Maidan, Patna - 800001', phone: '0612-2219086', services: ['Food Safety', 'ISI Certification', 'Plywood Standards'], color: '#2563eb' },
+
+  // TESTING LABORATORIES
+  { id: 'lab_gzb', type: 'lab', cityId: 'delhi', name: 'Central Testing Laboratory (CTL)', city: 'Ghaziabad (NCR)', lat: 28.6700, lng: 77.4250, address: 'Kamla Nehru Nagar, Raj Nagar, Ghaziabad, Uttar Pradesh - 201002', phone: '0120-2783347', services: ['Helmet Impact Test', 'LED Photometry', 'Pressure Cooker Test', 'Chemical Analysis'], color: '#0891b2' },
+  { id: 'lab_sahibabad', type: 'lab', cityId: 'delhi', name: 'Western Regional Lab', city: 'Sahibabad', lat: 28.6650, lng: 77.3600, address: 'Plot No. 20/9, Site IV Industrial Area, Sahibabad, Ghaziabad - 201010', phone: '0120-2895100', services: ['Electrical Testing', 'Electronics Safety', 'Toy Safety'], color: '#0891b2' },
+  { id: 'lab_mohali', type: 'lab', cityId: 'delhi', name: 'Northern Regional Testing Lab', city: 'Mohali', lat: 30.7000, lng: 76.7100, address: 'Plot No. E-14, Phase 7, SAS Nagar (Mohali), Punjab - 160055', phone: '0172-2236021', services: ['Mechanical Testing', 'Pump Testing', 'Metallurgy'], color: '#0891b2' },
+  { id: 'lab_chn', type: 'lab', cityId: 'chennai', name: 'Southern Regional Testing Lab', city: 'Chennai', lat: 12.9860, lng: 80.2460, address: 'CIT Campus, Taramani, Chennai - 600113', phone: '044-22541400', services: ['Cement & Concrete', 'Steel Testing', 'Cable Testing'], color: '#0891b2' },
+  { id: 'lab_kol', type: 'lab', cityId: 'kolkata', name: 'Eastern Regional Testing Lab', city: 'Kolkata', lat: 22.5730, lng: 88.4340, address: 'Sector V, Salt Lake City, Kolkata - 700091', phone: '033-23590101', services: ['Jute & Textiles', 'Chemical Analysis', 'Rubber Testing'], color: '#0891b2' },
+  { id: 'lab_blr', type: 'lab', cityId: 'bengaluru', name: 'BIS Branch Lab', city: 'Bengaluru', lat: 13.0320, lng: 77.5190, address: 'Peenya Industrial Area, Bengaluru - 560058', phone: '080-28395000', services: ['Solar PV Modules', 'Battery Safety', 'Electronic Components'], color: '#0891b2' },
+
+  // RECOGNIZED GOLD HALLMARKING & ASSAYING CENTRES
+  { id: 'hc_del_kb', type: 'hallmark', cityId: 'delhi', name: 'BIS Recognized Hallmarking Centre (Karol Bagh)', city: 'New Delhi', lat: 28.6520, lng: 77.1900, address: 'Bank Street, Karol Bagh Jewellery Market, New Delhi - 110005', phone: '011-28751200', services: ['Gold Hallmarking', 'HUID Laser Marking', 'XRF Assay Testing'], color: '#d97706' },
+  { id: 'hc_mum_zb', type: 'hallmark', cityId: 'mumbai', name: 'BIS Recognized Hallmarking Centre (Zaveri Bazaar)', city: 'Mumbai', lat: 18.9500, lng: 72.8300, address: 'Zaveri Bazaar, Kalbadevi, Mumbai, Maharashtra - 400002', phone: '022-22401122', services: ['Gold & Silver Hallmarking', 'HUID Verification', 'Fire Assay'], color: '#d97706' },
+  { id: 'hc_thrissur', type: 'hallmark', cityId: 'thrissur', name: 'BIS Recognized Hallmarking Centre (Thrissur)', city: 'Thrissur', lat: 10.5250, lng: 76.2150, address: 'Rice Bazaar Road, Thrissur, Kerala - 680001', phone: '0487-2421055', services: ['Gold Jewelry Hallmarking', 'HUID Verification', 'Silver Testing'], color: '#d97706' },
+  { id: 'hc_surat', type: 'hallmark', cityId: 'ahmedabad', name: 'BIS Recognized Hallmarking Centre (Surat)', city: 'Surat', lat: 21.2000, lng: 72.8300, address: 'Zampa Bazaar, Main Road, Begampura, Surat - 395003', phone: '0261-2451088', services: ['Gold Jewelry Assay', 'HUID Laser Marking', 'Platinum Hallmarking'], color: '#d97706' },
+  { id: 'hc_coimbatore', type: 'hallmark', cityId: 'chennai', name: 'BIS Recognized Hallmarking Centre (Coimbatore)', city: 'Coimbatore', lat: 11.0180, lng: 76.9650, address: 'Cross Cut Road, Gandhipuram, Coimbatore, Tamil Nadu - 641012', phone: '0422-2521100', services: ['Gold Hallmarking', 'HUID Audit', 'XRF Analysis'], color: '#d97706' },
+  { id: 'hc_jaipur', type: 'hallmark', cityId: 'jaipur', name: 'BIS Recognized Hallmarking Centre (Johari Bazaar)', city: 'Jaipur', lat: 26.9180, lng: 75.8250, address: 'Johari Bazaar, Pink City, Jaipur, Rajasthan - 302003', phone: '0141-2561133', services: ['Precious Metals Assay', 'Gold Hallmarking', 'HUID Verification'], color: '#d97706' },
+  { id: 'hc_kolkata', type: 'hallmark', cityId: 'kolkata', name: 'BIS Recognized Hallmarking Centre (Bowbazar)', city: 'Kolkata', lat: 22.5690, lng: 88.3620, address: 'Bowbazar, BB Ganguly Street, Kolkata, West Bengal - 700012', phone: '033-22371050', services: ['Gold Hallmarking', 'Fire Assay', 'Silver Testing'], color: '#d97706' }
 ];
 
 function IndiaMapModal({ isOpen, onClose, darkMode }) {
   const [selected, setSelected] = useState(null);
   const [filter, setFilter] = useState('all');
-  const [mapMode, setMapMode] = useState('default'); // 'default' | 'satellite'
+  const [selectedCity, setSelectedCity] = useState('all');
+  const [mapMode, setMapMode] = useState('default'); // 'default' (OSM) | 'satellite' (Esri)
+  const mapRef = useRef(null);
+  const mapInstanceRef = useRef(null);
+  const tileLayerRef = useRef(null);
+  const markersGroupRef = useRef(null);
+  const [isLeafletLoaded, setIsLeafletLoaded] = useState(false);
+
+  // Filter locations by type AND city
+  const filtered = REAL_BIS_LOCATIONS.filter(loc => {
+    const matchesCategory = filter === 'all' ? true :
+      filter === 'office' ? loc.type === 'office' :
+      filter === 'lab' ? loc.type === 'lab' :
+      loc.type === 'hallmark';
+    const matchesCity = selectedCity === 'all' ? true : loc.cityId === selectedCity;
+    return matchesCategory && matchesCity;
+  });
+
+  // Load Leaflet CSS & JS dynamically
+  useEffect(() => {
+    if (!isOpen) return;
+
+    let isSubscribed = true;
+
+    const loadLeaflet = () => {
+      if (window.L) {
+        if (isSubscribed) setIsLeafletLoaded(true);
+        return;
+      }
+
+      if (!document.getElementById('leaflet-css')) {
+        const link = document.createElement('link');
+        link.id = 'leaflet-css';
+        link.rel = 'stylesheet';
+        link.href = 'https://unpkg.com/leaflet@1.9.4/dist/leaflet.css';
+        document.head.appendChild(link);
+      }
+
+      if (!document.getElementById('leaflet-js')) {
+        const script = document.createElement('script');
+        script.id = 'leaflet-js';
+        script.src = 'https://unpkg.com/leaflet@1.9.4/dist/leaflet.js';
+        script.onload = () => {
+          if (isSubscribed) setIsLeafletLoaded(true);
+        };
+        document.head.appendChild(script);
+      } else {
+        const checkL = setInterval(() => {
+          if (window.L) {
+            clearInterval(checkL);
+            if (isSubscribed) setIsLeafletLoaded(true);
+          }
+        }, 100);
+      }
+    };
+
+    loadLeaflet();
+
+    return () => {
+      isSubscribed = false;
+    };
+  }, [isOpen]);
+
+  // Initialize and update Leaflet map
+  useEffect(() => {
+    if (!isOpen || !isLeafletLoaded || !mapRef.current || !window.L) return;
+
+    const L = window.L;
+
+    // Create Map if not already created
+    if (!mapInstanceRef.current) {
+      const indiaBounds = L.latLngBounds(L.latLng(6.0, 68.0), L.latLng(37.5, 97.5));
+
+      const map = L.map(mapRef.current, {
+        center: [22.5937, 78.9629], // Center of India
+        zoom: 5,
+        minZoom: 4,
+        maxZoom: 18,
+        maxBounds: indiaBounds,
+        maxBoundsViscosity: 0.8
+      });
+
+      mapInstanceRef.current = map;
+      markersGroupRef.current = L.layerGroup().addTo(map);
+    }
+
+    const map = mapInstanceRef.current;
+
+    // Update Tile Layer based on mapMode
+    if (tileLayerRef.current) {
+      map.removeLayer(tileLayerRef.current);
+    }
+
+    if (mapMode === 'satellite') {
+      // Esri World Imagery (Real Satellite Photos from Space)
+      tileLayerRef.current = L.tileLayer(
+        'https://server.arcgisonline.com/ArcGIS/rest/services/World_Imagery/MapServer/tile/{z}/{y}/{x}',
+        { attribution: 'Tiles &copy; Esri &mdash; Source: Esri, i-cubed, USDA, USGS, AEX, GeoEye, Getmapping, Aerogrid, IGN, IGP, UPR-EGP, and the GIS User Community' }
+      ).addTo(map);
+    } else {
+      // OpenStreetMap Default Vector Map
+      tileLayerRef.current = L.tileLayer(
+        'https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png',
+        { attribution: '&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors' }
+      ).addTo(map);
+    }
+
+    // Clear previous markers
+    if (markersGroupRef.current) {
+      markersGroupRef.current.clearLayers();
+    }
+
+    // Add markers for filtered locations
+    filtered.forEach(loc => {
+      const markerColor = loc.color;
+      const isSelected = selected?.id === loc.id;
+
+      const marker = L.circleMarker([loc.lat, loc.lng], {
+        radius: isSelected ? 10 : 7,
+        fillColor: markerColor,
+        color: '#ffffff',
+        weight: 2,
+        opacity: 1,
+        fillOpacity: 0.95
+      });
+
+      const popupHtml = `
+        <div style="font-family: sans-serif; padding: 4px;">
+          <div style="font-weight: 800; font-size: 14px; color: #0f172a;">${loc.name}</div>
+          <div style="font-size: 12px; font-weight: 700; color: #059669; margin: 2px 0;">📍 ${loc.city}, India</div>
+          <div style="font-size: 11px; color: #475569; margin-bottom: 6px;">${loc.address}</div>
+          <a href="https://www.google.com/maps/search/?api=1&query=${encodeURIComponent(loc.name + ' ' + loc.address)}" target="_blank" style="display: inline-block; background: #2563eb; color: #fff; text-decoration: none; padding: 4px 10px; border-radius: 6px; font-size: 11px; font-weight: 700;">📍 Open in Google Maps ↗</a>
+        </div>
+      `;
+
+      marker.bindPopup(popupHtml);
+      marker.on('click', () => setSelected(loc));
+      markersGroupRef.current.addLayer(marker);
+    });
+
+    setTimeout(() => {
+      map.invalidateSize();
+    }, 150);
+  }, [isOpen, isLeafletLoaded, filter, mapMode, selectedCity]);
+
+  // Handle City Change — Fly to City Coordinates
+  const handleCitySelect = (cityObj) => {
+    setSelectedCity(cityObj.id);
+    setSelected(null);
+
+    if (mapInstanceRef.current && window.L) {
+      mapInstanceRef.current.flyTo([cityObj.lat, cityObj.lng], cityObj.zoom, {
+        animate: true,
+        duration: 1.2
+      });
+    }
+  };
+
+  // Fly to selected office
+  useEffect(() => {
+    if (selected && mapInstanceRef.current) {
+      mapInstanceRef.current.setView([selected.lat, selected.lng], 12, { animate: true });
+    }
+  }, [selected]);
+
+  // Cleanup on close
+  useEffect(() => {
+    if (!isOpen && mapInstanceRef.current) {
+      mapInstanceRef.current.remove();
+      mapInstanceRef.current = null;
+    }
+  }, [isOpen]);
 
   if (!isOpen) return null;
-
-  const filtered = filter === 'all' ? BIS_OFFICES :
-    filter === 'office' ? BIS_OFFICES.filter(o => o.id.startsWith('nd') || o.id.startsWith('er') || o.id.startsWith('sr') || o.id.startsWith('wr') || o.id.startsWith('cr')) :
-      filter === 'lab' ? BIS_OFFICES.filter(o => o.id.startsWith('lab')) :
-        BIS_OFFICES.filter(o => o.id.startsWith('hc'));
-
-  const typeColors = { office: '#3b82f6', lab: '#06b6d4', hallmark: '#f59e0b' };
 
   return (
     <div className="fixed inset-0 z-[200] flex items-center justify-center bg-black/75 backdrop-blur-sm p-3">
@@ -2098,43 +2295,70 @@ function IndiaMapModal({ isOpen, onClose, darkMode }) {
         {/* Header */}
         <div className="flex items-center justify-between p-5 border-b border-slate-700 shrink-0">
           <div>
-            <h2 className="text-2xl font-extrabold flex items-center gap-2">🗺️ BIS India — Offices, Labs & Hallmarking Centers</h2>
-            <p className={`text-sm mt-1 ${darkMode ? 'text-slate-400' : 'text-slate-500'}`}>Click any marker to view location details & directions</p>
+            <h2 className="text-2xl font-extrabold flex items-center gap-2">🗺️ BIS India — Real OpenStreetMap Offices, Labs & Hallmarking</h2>
+            <p className={`text-sm mt-1 ${darkMode ? 'text-slate-400' : 'text-slate-500'}`}>Live interactive OpenStreetMap & Esri Satellite imagery of verified BIS locations across India</p>
           </div>
           <button onClick={() => { setSelected(null); onClose(); }} className={`text-2xl leading-none px-2 cursor-pointer ${darkMode ? 'text-slate-400 hover:text-white' : 'text-slate-400 hover:text-slate-900'}`}>✕</button>
         </div>
 
-        {/* Filter Tabs */}
+        {/* City Quick Selection Bar ("Click City to View Nearby BIS Offices") */}
+        <div className="px-5 pt-3 shrink-0">
+          <div className="text-xs font-bold uppercase tracking-wider text-emerald-500 mb-1.5 flex items-center gap-1">
+            <span>🏙️</span>
+            <span>Click City to View Nearby BIS Offices & Labs:</span>
+          </div>
+          <div className="flex flex-wrap gap-1.5 overflow-x-auto pb-1">
+            {MAJOR_CITIES.map(city => (
+              <button
+                key={city.id}
+                onClick={() => handleCitySelect(city)}
+                className={`px-3 py-1 rounded-lg text-xs font-bold border transition cursor-pointer shrink-0 ${
+                  selectedCity === city.id
+                    ? 'bg-emerald-600 text-white border-emerald-600 shadow-sm'
+                    : darkMode
+                      ? 'bg-slate-800 border-slate-700 text-slate-300 hover:border-emerald-500 hover:text-white'
+                      : 'bg-slate-100 border-slate-300 text-slate-700 hover:border-emerald-400'
+                }`}
+              >
+                {city.name}
+              </button>
+            ))}
+          </div>
+        </div>
+
+        {/* Filter & View Switcher Toolbar */}
         <div className="flex flex-wrap items-center justify-between gap-2 px-5 pt-3 shrink-0">
-          <div className="flex gap-2">
-            {[['all', '🏛️ All'], ['office', '🔵 Regional Offices'], ['lab', '🔵 Testing Labs'], ['hallmark', '🟡 Hallmarking']].map(([key, label]) => (
+          <div className="flex flex-wrap gap-2">
+            {[ ['all','🏛️ All Types'], ['office','🔵 BIS Regional Offices'], ['lab','🔬 Testing Labs'], ['hallmark','🟡 Gold Hallmarking'] ].map(([key, label]) => (
               <button key={key} onClick={() => { setFilter(key); setSelected(null); }}
-                className={`px-4 py-1.5 rounded-full text-sm font-bold border transition cursor-pointer ${filter === key ? 'bg-emerald-600 text-white border-emerald-600' : darkMode ? 'bg-slate-800 border-slate-700 text-slate-300 hover:border-emerald-500' : 'bg-slate-100 border-slate-300 text-slate-700 hover:border-emerald-400'}`}>
+                className={`px-4 py-1.5 rounded-full text-sm font-bold border transition cursor-pointer ${filter === key ? 'bg-blue-600 text-white border-blue-600 shadow-sm' : darkMode ? 'bg-slate-800 border-slate-700 text-slate-300 hover:border-blue-500' : 'bg-slate-100 border-slate-300 text-slate-700 hover:border-blue-400'}`}>
                 {label}
               </button>
             ))}
           </div>
 
-          {/* Google Maps Style Layer View Switcher (Default vs Satellite) */}
+          {/* OpenStreetMap vs Satellite Imagery Switcher */}
           <div className="flex bg-slate-900/90 rounded-xl p-1 border border-slate-700 shadow-md">
             <button
               type="button"
               onClick={() => setMapMode('default')}
-              className={`px-3 py-1.5 rounded-lg text-xs font-bold transition flex items-center gap-1.5 cursor-pointer ${mapMode === 'default'
+              className={`px-3 py-1.5 rounded-lg text-xs font-bold transition flex items-center gap-1.5 cursor-pointer ${
+                mapMode === 'default'
                   ? 'bg-blue-600 text-white shadow-md'
                   : 'text-slate-300 hover:text-white hover:bg-slate-800'
-                }`}
+              }`}
             >
               <span>🗺️</span>
-              <span>Default View</span>
+              <span>OpenStreetMap</span>
             </button>
             <button
               type="button"
               onClick={() => setMapMode('satellite')}
-              className={`px-3 py-1.5 rounded-lg text-xs font-bold transition flex items-center gap-1.5 cursor-pointer ${mapMode === 'satellite'
+              className={`px-3 py-1.5 rounded-lg text-xs font-bold transition flex items-center gap-1.5 cursor-pointer ${
+                mapMode === 'satellite'
                   ? 'bg-emerald-600 text-white shadow-md'
                   : 'text-slate-300 hover:text-white hover:bg-slate-800'
-                }`}
+              }`}
             >
               <span>🛰️</span>
               <span>Satellite View</span>
@@ -2144,96 +2368,33 @@ function IndiaMapModal({ isOpen, onClose, darkMode }) {
 
         {/* Map + Info split */}
         <div className="flex flex-1 overflow-hidden min-h-0 m-4 gap-4">
-          {/* SVG Map Container */}
-          <div className={`relative flex-1 rounded-2xl border overflow-hidden flex items-center justify-center transition-colors ${mapMode === 'satellite'
-              ? 'bg-[#060e1a] border-emerald-900/50 shadow-inner'
-              : darkMode ? 'bg-slate-800 border-slate-700' : 'bg-blue-50 border-slate-200'
-            }`}>
+          {/* Leaflet OpenStreetMap Container */}
+          <div className="relative flex-1 rounded-2xl border border-slate-700 overflow-hidden shadow-inner flex flex-col">
+            <div ref={mapRef} className="w-full h-full min-h-[440px] z-10" />
 
-            {/* Top Right Map Mode Badge */}
-            <div className="absolute top-3 left-3 z-10 text-[10px] uppercase font-mono tracking-widest px-2.5 py-1 rounded-md border shadow-md font-bold bg-slate-900/80 text-emerald-400 border-emerald-500/40 backdrop-blur-sm">
-              {mapMode === 'satellite' ? '🛰️ SATELLITE TERRAIN MODE' : '🗺️ DEFAULT MAP VECTOR'}
-            </div>
-
-            <svg viewBox="0 0 100 100" className="w-full h-full max-h-[460px]" style={{ filter: mapMode === 'satellite' ? 'drop-shadow(0 4px 12px rgba(0,255,170,0.15))' : 'drop-shadow(0 2px 8px rgba(0,0,0,0.15))' }}>
-              <defs>
-                <linearGradient id="satGradient" x1="0%" y1="0%" x2="100%" y2="100%">
-                  <stop offset="0%" stopColor="#143022" />
-                  <stop offset="50%" stopColor="#1f4430" />
-                  <stop offset="100%" stopColor="#0d2419" />
-                </linearGradient>
-                <pattern id="satGrid" width="10" height="10" patternUnits="userSpaceOnUse">
-                  <path d="M 10 0 L 0 0 0 10" fill="none" stroke="#34d399" strokeWidth="0.08" opacity="0.25" />
-                </pattern>
-              </defs>
-
-              {/* Satellite Grid Overlay */}
-              {mapMode === 'satellite' && (
-                <rect width="100" height="100" fill="url(#satGrid)" />
-              )}
-
-              {/* Simplified India outline */}
-              <path
-                d="M25,5 L40,3 L58,5 L72,12 L80,20 L85,30 L82,38 L78,45 L80,55 L75,65 L68,72 L60,80 L50,90 L42,95 L35,88 L28,78 L22,68 L18,58 L15,48 L18,38 L15,28 L20,18 Z"
-                fill={mapMode === 'satellite' ? 'url(#satGradient)' : darkMode ? '#1e293b' : '#dbeafe'}
-                stroke={mapMode === 'satellite' ? '#34d399' : darkMode ? '#475569' : '#93c5fd'}
-                strokeWidth={mapMode === 'satellite' ? '0.9' : '0.8'}
-              />
-              {/* Kashmir region */}
-              <path
-                d="M25,5 L28,2 L35,1 L40,3"
-                fill={mapMode === 'satellite' ? 'url(#satGradient)' : darkMode ? '#1e293b' : '#dbeafe'}
-                stroke={mapMode === 'satellite' ? '#34d399' : darkMode ? '#475569' : '#93c5fd'}
-                strokeWidth="0.5"
-              />
-              {/* Northeast */}
-              <path
-                d="M72,12 L80,8 L85,15 L80,20"
-                fill={mapMode === 'satellite' ? 'url(#satGradient)' : darkMode ? '#1e293b' : '#dbeafe'}
-                stroke={mapMode === 'satellite' ? '#34d399' : darkMode ? '#475569' : '#93c5fd'}
-                strokeWidth="0.5"
-              />
-
-              {/* Markers */}
-              {filtered.map(office => (
-                <g key={office.id} onClick={() => setSelected(selected?.id === office.id ? null : office)} style={{ cursor: 'pointer' }}>
-                  <circle
-                    cx={office.x} cy={office.y} r={selected?.id === office.id ? 3.8 : 2.6}
-                    fill={mapMode === 'satellite' && selected?.id === office.id ? '#38bdf8' : office.color}
-                    stroke="white" strokeWidth="0.8"
-                    style={{ transition: 'all 0.2s', filter: mapMode === 'satellite' ? 'drop-shadow(0 0 6px ' + (office.color) + ')' : selected?.id === office.id ? 'drop-shadow(0 0 4px ' + office.color + ')' : 'none' }}
-                  />
-                  {selected?.id === office.id && (
-                    <circle cx={office.x} cy={office.y} r={5.5} fill="none" stroke={mapMode === 'satellite' ? '#38bdf8' : office.color} strokeWidth="0.6" opacity="0.8" className="animate-pulse" />
-                  )}
-                  <text x={office.x + 3.5} y={office.y + 1} fontSize="2" fill={mapMode === 'satellite' ? '#f8fafc' : darkMode ? '#cbd5e1' : '#374151'} style={{ pointerEvents: 'none', fontWeight: 700 }}>
-                    {office.city.split(' ')[0]}
-                  </text>
-                </g>
-              ))}
-            </svg>
-
-            {/* Legend */}
-            <div className={`absolute bottom-3 left-3 rounded-xl p-2 text-xs space-y-1 ${mapMode === 'satellite' ? 'bg-slate-950/90 border border-slate-800 text-slate-200' : darkMode ? 'bg-slate-900/90' : 'bg-white/90'}`}>
-              {[['🔵', '#3b82f6', 'Regional Office'], ['🔵', '#06b6d4', 'Testing Lab'], ['🟡', '#f59e0b', 'Hallmarking']].map(([dot, col, label]) => (
-                <div key={label} className="flex items-center gap-1.5">
-                  <span style={{ color: col }}>●</span>
-                  <span className={mapMode === 'satellite' ? 'text-slate-200 font-medium' : darkMode ? 'text-slate-300' : 'text-slate-600'}>{label}</span>
-                </div>
-              ))}
-            </div>
+            {!isLeafletLoaded && (
+              <div className="absolute inset-0 bg-slate-900 text-white flex items-center justify-center gap-3 text-lg font-bold z-20">
+                <span className="animate-spin text-2xl">⏳</span>
+                <span>Loading Live OpenStreetMap & Satellite Layers...</span>
+              </div>
+            )}
           </div>
 
-          {/* Info Panel */}
-          <div className="w-72 shrink-0 overflow-y-auto space-y-2">
+          {/* Location Info & List Sidebar */}
+          <div className="w-80 shrink-0 overflow-y-auto space-y-2">
             {selected ? (
               <div className={`rounded-xl border p-4 h-full flex flex-col justify-between ${darkMode ? 'bg-slate-800 border-slate-700' : 'bg-white border-slate-200'}`}>
                 <div>
-                  <div className="w-10 h-10 rounded-xl flex items-center justify-center text-xl mb-3" style={{ backgroundColor: selected.color + '22' }}>
-                    {selected.id.startsWith('lab') ? '🔬' : selected.id.startsWith('hc') ? '🏅' : '🏛️'}
+                  <div className="flex items-center justify-between mb-2">
+                    <div className="w-10 h-10 rounded-xl flex items-center justify-center text-xl" style={{ backgroundColor: selected.color + '22' }}>
+                      {selected.type === 'lab' ? '🔬' : selected.type === 'hallmark' ? '🏅' : '🏛️'}
+                    </div>
+                    <button onClick={() => setSelected(null)} className="text-xs font-bold text-slate-400 hover:text-slate-200 bg-slate-700/50 px-2 py-1 rounded-lg">
+                      ← Back to All
+                    </button>
                   </div>
                   <h3 className="font-extrabold text-base mb-1">{selected.name}</h3>
-                  <p className={`text-sm font-semibold mb-3 ${darkMode ? 'text-emerald-400' : 'text-emerald-600'}`}>📍 {selected.city}</p>
+                  <p className={`text-sm font-semibold mb-3 ${darkMode ? 'text-emerald-400' : 'text-emerald-600'}`}>📍 {selected.city}, India</p>
                   <div className="space-y-3 text-sm">
                     <div>
                       <p className={`text-xs font-bold uppercase mb-1 ${darkMode ? 'text-slate-400' : 'text-slate-500'}`}>Address</p>
@@ -2254,7 +2415,7 @@ function IndiaMapModal({ isOpen, onClose, darkMode }) {
                   </div>
                 </div>
 
-                {/* Google Maps Direct Navigation Button */}
+                {/* Direct Google Maps Direction Link */}
                 <a
                   href={`https://www.google.com/maps/search/?api=1&query=${encodeURIComponent(selected.name + ' ' + selected.address)}`}
                   target="_blank"
@@ -2262,21 +2423,26 @@ function IndiaMapModal({ isOpen, onClose, darkMode }) {
                   className="w-full mt-4 bg-blue-600 hover:bg-blue-700 text-white font-bold py-2.5 px-3 rounded-xl text-xs flex items-center justify-center gap-1.5 transition shadow-sm cursor-pointer shrink-0"
                 >
                   <span>📍</span>
-                  <span>Open in Google Maps</span>
+                  <span>Open in Google Maps / Get Directions</span>
                   <span>↗</span>
                 </a>
               </div>
             ) : (
               <div className={`h-full rounded-xl border flex flex-col gap-2 p-3 overflow-y-auto ${darkMode ? 'border-slate-700' : 'border-slate-200'}`}>
-                <p className={`text-sm font-bold px-1 ${darkMode ? 'text-slate-300' : 'text-slate-600'}`}>Showing {filtered.length} locations — click any dot on map or a card</p>
+                <p className={`text-xs font-bold px-1 uppercase tracking-wider ${darkMode ? 'text-slate-400' : 'text-slate-500'}`}>
+                  Showing {filtered.length} BIS Locations {selectedCity !== 'all' ? `in ${MAJOR_CITIES.find(c => c.id === selectedCity)?.name}` : 'in India'}
+                </p>
                 {filtered.map(office => (
                   <button key={office.id} onClick={() => setSelected(office)}
                     className={`text-left rounded-xl p-3 border transition cursor-pointer ${darkMode ? 'bg-slate-800 border-slate-700 hover:border-emerald-500' : 'bg-slate-50 border-slate-200 hover:border-emerald-400'}`}>
                     <div className="flex items-center gap-2 mb-1">
                       <span style={{ color: office.color }}>●</span>
                       <span className="font-bold text-sm">{office.city}</span>
+                      <span className="text-[10px] uppercase font-bold px-1.5 py-0.5 rounded bg-slate-700/40 text-slate-300 ml-auto">
+                        {office.type === 'lab' ? 'Lab' : office.type === 'hallmark' ? 'Hallmark' : 'Office'}
+                      </span>
                     </div>
-                    <p className={`text-xs leading-snug ${darkMode ? 'text-slate-400' : 'text-slate-500'}`}>{office.name}</p>
+                    <p className={`text-xs leading-snug font-medium ${darkMode ? 'text-slate-300' : 'text-slate-600'}`}>{office.name}</p>
                   </button>
                 ))}
               </div>
